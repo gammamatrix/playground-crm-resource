@@ -1,0 +1,583 @@
+Client Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\ClientRoute)
+ [x] Guest cannot render index view
+ [x] Json guest cannot see info
+ [x] Guest cannot render show view
+ [x] Json guest cannot destroy
+ [x] Guest cannot destroy
+ [x] Guest cannot lock
+ [x] Json guest cannot restore
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Guest cannot render edit view
+ [x] Json guest cannot get index
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Guest cannot store
+ [x] Json guest cannot store
+ [x] Admin can render index view
+ [x] Json guest cannot update
+ [x] Guest cannot update
+ [x] Admin can render create view
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Show view rendered by admin
+ [x] Json admin can get create info
+ [x] Admin can render edit view
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Destroy as admin and succeed
+ [x] Lock as admin and succeed
+ [x] Store as admin without payload and fail validation
+ [x] Json restore as admin and succeed
+ [x] Restore as admin and succeed
+ [x] Admin can render create view with return url
+ [x] Json update as admin without payload and fail validation
+ [x] Update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Unlock as admin and succeed
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Admin can render edit view with return url
+ [x] Admin can render index view with filters
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Store as admin and succeed
+ [x] Json admin can update
+ [x] Admin can update
+ [x] Create view as admin with invalid parameter and fail validation and redirect
+ [x] Json store as admin and succeed
+ [x] Lock as admin and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin and succeed with force delete
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Restore as admin and succeed with redirect to index with only trash
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Edit view as admin with invalid parameter and fail validation and redirect
+ [x] Unlock as admin and succeed with redirect to index with sorted by unlocked desc
+ [x] Destroy as admin and succeed with redirect to index with trash
+ [x] Json destroy as admin and succeed with no content
+ [x] Lock as user and get denied
+ [x] Admin can update view with return url
+ [x] Store as admin and succeed with return url
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Restore as user and get denied
+ [x] Unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Destroy as user and get denied and no force delete allowed
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Command (Tests\Feature\Playground\Crm\Resource\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed
+
+Contact Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\ContactRoute)
+ [x] Guest cannot render index view
+ [x] Json guest cannot see info
+ [x] Guest cannot render show view
+ [x] Json guest cannot destroy
+ [x] Guest cannot destroy
+ [x] Guest cannot lock
+ [x] Json guest cannot restore
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Guest cannot render edit view
+ [x] Json guest cannot get index
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Guest cannot store
+ [x] Json guest cannot store
+ [x] Admin can render index view
+ [x] Json guest cannot update
+ [x] Guest cannot update
+ [x] Admin can render create view
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Show view rendered by admin
+ [x] Json admin can get create info
+ [x] Admin can render edit view
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Destroy as admin and succeed
+ [x] Lock as admin and succeed
+ [x] Store as admin without payload and fail validation
+ [x] Json restore as admin and succeed
+ [x] Restore as admin and succeed
+ [x] Admin can render create view with return url
+ [x] Json update as admin without payload and fail validation
+ [x] Update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Unlock as admin and succeed
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Admin can render edit view with return url
+ [x] Admin can render index view with filters
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Store as admin and succeed
+ [x] Json admin can update
+ [x] Admin can update
+ [x] Create view as admin with invalid parameter and fail validation and redirect
+ [x] Json store as admin and succeed
+ [x] Lock as admin and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin and succeed with force delete
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Restore as admin and succeed with redirect to index with only trash
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Edit view as admin with invalid parameter and fail validation and redirect
+ [x] Unlock as admin and succeed with redirect to index with sorted by unlocked desc
+ [x] Destroy as admin and succeed with redirect to index with trash
+ [x] Json destroy as admin and succeed with no content
+ [x] Lock as user and get denied
+ [x] Admin can update view with return url
+ [x] Store as admin and succeed with return url
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Restore as user and get denied
+ [x] Unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Destroy as user and get denied and no force delete allowed
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Create Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\CreateRequest)
+ [x] Request instance
+
+Create Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\CreateRequest)
+ [x] Request instance
+
+Create Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\CreateRequest)
+ [x] Request instance
+
+Create Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\CreateRequest)
+ [x] Request instance
+
+Create Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\CreateRequest)
+ [x] Request instance
+
+Destroy Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\DestroyRequest)
+ [x] Request instance
+
+Destroy Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\DestroyRequest)
+ [x] Request instance
+
+Destroy Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\DestroyRequest)
+ [x] Request instance
+
+Destroy Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\DestroyRequest)
+ [x] Request instance
+
+Destroy Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\DestroyRequest)
+ [x] Request instance
+
+Edit Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\EditRequest)
+ [x] Request instance
+
+Edit Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\EditRequest)
+ [x] Request instance
+
+Edit Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\EditRequest)
+ [x] Request instance
+
+Edit Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\EditRequest)
+ [x] Request instance
+
+Edit Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\EditRequest)
+ [x] Request instance
+
+Index Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\IndexRequest)
+ [x] Request instance
+
+Index Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\IndexRequest)
+ [x] Request instance
+
+Index Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\IndexRequest)
+ [x] Request instance
+
+Index Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\IndexRequest)
+ [x] Request instance
+
+Index Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\IndexRequest)
+ [x] Request instance
+
+Index Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\IndexRoute)
+ [x] Guest cannot render index view
+ [x] Admin can render index view
+
+Instance (Tests\Feature\Playground\Crm\Resource\Http\Requests\FormRequest\Instance)
+ [x] FormRequest authorize with admin
+
+Instance (Tests\Unit\Playground\Crm\Resource\Http\Requests\FormRequest\Instance)
+ [x] FormRequest authorize without user
+ [x] RULES is empty by default
+ [x] UserHasAdminPrivileges without user
+ [x] UserHasAdminPrivileges with admin
+ [x] UserHasAdminPrivileges with default laravel user
+
+Instance (Tests\Unit\Playground\Crm\Resource\ServiceProvider\Instance)
+ [x] Version matches
+ [x] SetPolicies with empty array
+ [x] SetPolicies with invalid model
+ [x] SetPolicies with invalid policy
+
+Location Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\LocationRoute)
+ [x] Guest cannot render index view
+ [x] Json guest cannot see info
+ [x] Guest cannot render show view
+ [x] Json guest cannot destroy
+ [x] Guest cannot destroy
+ [x] Guest cannot lock
+ [x] Json guest cannot restore
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Guest cannot render edit view
+ [x] Json guest cannot get index
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Guest cannot store
+ [x] Json guest cannot store
+ [x] Admin can render index view
+ [x] Json guest cannot update
+ [x] Guest cannot update
+ [x] Admin can render create view
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Show view rendered by admin
+ [x] Json admin can get create info
+ [x] Admin can render edit view
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Destroy as admin and succeed
+ [x] Lock as admin and succeed
+ [x] Store as admin without payload and fail validation
+ [x] Json restore as admin and succeed
+ [x] Restore as admin and succeed
+ [x] Admin can render create view with return url
+ [x] Json update as admin without payload and fail validation
+ [x] Update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Unlock as admin and succeed
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Admin can render edit view with return url
+ [x] Admin can render index view with filters
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Store as admin and succeed
+ [x] Json admin can update
+ [x] Admin can update
+ [x] Create view as admin with invalid parameter and fail validation and redirect
+ [x] Json store as admin and succeed
+ [x] Lock as admin and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin and succeed with force delete
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Restore as admin and succeed with redirect to index with only trash
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Edit view as admin with invalid parameter and fail validation and redirect
+ [x] Unlock as admin and succeed with redirect to index with sorted by unlocked desc
+ [x] Destroy as admin and succeed with redirect to index with trash
+ [x] Json destroy as admin and succeed with no content
+ [x] Lock as user and get denied
+ [x] Admin can update view with return url
+ [x] Store as admin and succeed with return url
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Restore as user and get denied
+ [x] Unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Destroy as user and get denied and no force delete allowed
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Lock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\LockRequest)
+ [x] Request instance
+
+Lock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\LockRequest)
+ [x] Request instance
+
+Lock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\LockRequest)
+ [x] Request instance
+
+Lock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\LockRequest)
+ [x] Request instance
+
+Lock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\LockRequest)
+ [x] Request instance
+
+Organization Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\OrganizationRoute)
+ [x] Guest cannot render index view
+ [x] Json guest cannot see info
+ [x] Guest cannot render show view
+ [x] Json guest cannot destroy
+ [x] Guest cannot destroy
+ [x] Guest cannot lock
+ [x] Json guest cannot restore
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Guest cannot render edit view
+ [x] Json guest cannot get index
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Guest cannot store
+ [x] Json guest cannot store
+ [x] Admin can render index view
+ [x] Json guest cannot update
+ [x] Guest cannot update
+ [x] Admin can render create view
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Show view rendered by admin
+ [x] Json admin can get create info
+ [x] Admin can render edit view
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Destroy as admin and succeed
+ [x] Lock as admin and succeed
+ [x] Store as admin without payload and fail validation
+ [x] Json restore as admin and succeed
+ [x] Restore as admin and succeed
+ [x] Admin can render create view with return url
+ [x] Json update as admin without payload and fail validation
+ [x] Update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Unlock as admin and succeed
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Admin can render edit view with return url
+ [x] Admin can render index view with filters
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Store as admin and succeed
+ [x] Json admin can update
+ [x] Admin can update
+ [x] Create view as admin with invalid parameter and fail validation and redirect
+ [x] Json store as admin and succeed
+ [x] Lock as admin and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin and succeed with force delete
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Restore as admin and succeed with redirect to index with only trash
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Edit view as admin with invalid parameter and fail validation and redirect
+ [x] Unlock as admin and succeed with redirect to index with sorted by unlocked desc
+ [x] Destroy as admin and succeed with redirect to index with trash
+ [x] Json destroy as admin and succeed with no content
+ [x] Lock as user and get denied
+ [x] Admin can update view with return url
+ [x] Store as admin and succeed with return url
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Restore as user and get denied
+ [x] Unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Destroy as user and get denied and no force delete allowed
+ [x] Json destroy as user and get denied and no force delete allowed
+
+People Route (Tests\Feature\Playground\Crm\Resource\Http\Controllers\Playground\PeopleRoute)
+ [x] Guest cannot render index view
+ [x] Json guest cannot see info
+ [x] Guest cannot render show view
+ [x] Json guest cannot destroy
+ [x] Guest cannot destroy
+ [x] Guest cannot lock
+ [x] Json guest cannot restore
+ [x] Guest cannot restore
+ [x] Guest cannot render create view
+ [x] Guest cannot render edit view
+ [x] Json guest cannot get index
+ [x] Json guest cannot lock
+ [x] Json guest cannot unlock
+ [x] Guest cannot unlock
+ [x] Json guest cannot get create info
+ [x] Json guest cannot get edit info
+ [x] Guest cannot store
+ [x] Json guest cannot store
+ [x] Admin can render index view
+ [x] Json guest cannot update
+ [x] Guest cannot update
+ [x] Admin can render create view
+ [x] Json admin can get index
+ [x] Json show info for admin
+ [x] Show view rendered by admin
+ [x] Json admin can get create info
+ [x] Admin can render edit view
+ [x] Json admin can get edit info
+ [x] Json destroy as admin and succeed
+ [x] Destroy as admin and succeed
+ [x] Lock as admin and succeed
+ [x] Store as admin without payload and fail validation
+ [x] Json restore as admin and succeed
+ [x] Restore as admin and succeed
+ [x] Admin can render create view with return url
+ [x] Json update as admin without payload and fail validation
+ [x] Update as admin without payload and fail validation
+ [x] Json lock as admin and succeed
+ [x] Json store as admin without payload and fail validation
+ [x] Json unlock as admin and succeed
+ [x] Unlock as admin and succeed
+ [x] Json get create info as admin with invalid parameter and fail validation
+ [x] Admin can render edit view with return url
+ [x] Admin can render index view with filters
+ [x] Json admin can get index with filters
+ [x] Json edit as admin and fail validation with invalid parameter
+ [x] Store as admin and succeed
+ [x] Json admin can update
+ [x] Admin can update
+ [x] Create view as admin with invalid parameter and fail validation and redirect
+ [x] Json store as admin and succeed
+ [x] Lock as admin and succeed with redirect to index with sorted by locked desc
+ [x] Destroy as admin and succeed with force delete
+ [x] Json lock as admin and succeed with no redirect
+ [x] Json destroy as admin and succeed with force delete
+ [x] Json restore as admin and succeed with no redirect
+ [x] Restore as admin and succeed with redirect to index with only trash
+ [x] Json unlock as admin and succeed with no redirect
+ [x] Edit view as admin with invalid parameter and fail validation and redirect
+ [x] Unlock as admin and succeed with redirect to index with sorted by unlocked desc
+ [x] Destroy as admin and succeed with redirect to index with trash
+ [x] Json destroy as admin and succeed with no content
+ [x] Lock as user and get denied
+ [x] Admin can update view with return url
+ [x] Store as admin and succeed with return url
+ [x] Json lock as user and get denied
+ [x] Json restore as user and get denied
+ [x] Json unlock as user and get denied
+ [x] Restore as user and get denied
+ [x] Unlock as user and get denied
+ [x] Json destroy as admin and succeed and ignore redirect
+ [x] Destroy as user and get denied and no force delete allowed
+ [x] Json destroy as user and get denied and no force delete allowed
+
+Policy (Tests\Unit\Playground\Crm\Resource\Policies\ClientPolicy\Policy)
+ [x] Policy instance
+
+Policy (Tests\Unit\Playground\Crm\Resource\Policies\ContactPolicy\Policy)
+ [x] Policy instance
+
+Policy (Tests\Unit\Playground\Crm\Resource\Policies\LocationPolicy\Policy)
+ [x] Policy instance
+
+Policy (Tests\Unit\Playground\Crm\Resource\Policies\OrganizationPolicy\Policy)
+ [x] Policy instance
+
+Policy (Tests\Unit\Playground\Crm\Resource\Policies\PeoplePolicy\Policy)
+ [x] Policy instance
+
+Restore Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\RestoreRequest)
+ [x] Request instance
+
+Restore Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\RestoreRequest)
+ [x] Request instance
+
+Restore Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\RestoreRequest)
+ [x] Request instance
+
+Restore Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\RestoreRequest)
+ [x] Request instance
+
+Restore Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\RestoreRequest)
+ [x] Request instance
+
+Show Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\ShowRequest)
+ [x] Request instance
+
+Show Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\ShowRequest)
+ [x] Request instance
+
+Show Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\ShowRequest)
+ [x] Request instance
+
+Show Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\ShowRequest)
+ [x] Request instance
+
+Show Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\ShowRequest)
+ [x] Request instance
+
+Store Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Store Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Store Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Store Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Store Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\StoreRequest)
+ [x] Request instance
+ [x] StoreRequest rules with optional revisions disabled
+ [x] StoreRequest rules with optional revisions enabled
+
+Unlock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\UnlockRequest)
+ [x] Request instance
+
+Unlock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\UnlockRequest)
+ [x] Request instance
+
+Unlock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\UnlockRequest)
+ [x] Request instance
+
+Unlock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\UnlockRequest)
+ [x] Request instance
+
+Unlock Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\UnlockRequest)
+ [x] Request instance
+
+Update Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Client\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Update Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Update Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Location\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Update Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\Organization\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+
+Update Request (Tests\Unit\Playground\Crm\Resource\Http\Requests\People\UpdateRequest)
+ [x] Request instance
+ [x] UpdateRequest rules with optional revisions disabled
+ [x] UpdateRequest rules with optional revisions enabled
+

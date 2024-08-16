@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2024-08-16 08:14:43</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>94</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>356</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Crm\Resource\Http\Requests\Client\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>create(Playground\Crm\Resource\Http\Requests\Client\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>edit(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>lock(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Crm\Resource\Http\Requests\Client\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\ClientCollection</methodSignature>
+      <fullMethod>index(Playground\Crm\Resource\Http\Requests\Client\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\ClientCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>restore(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>show(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Crm\Resource\Http\Requests\Client\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>store(Playground\Crm\Resource\Http\Requests\Client\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>unlock(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ClientController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</methodSignature>
+      <fullMethod>update(Playground\Crm\Models\Client $client, Playground\Crm\Resource\Http\Requests\Client\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Client</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Crm\Resource\Http\Requests\Contact\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>create(Playground\Crm\Resource\Http\Requests\Contact\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>edit(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>lock(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Crm\Resource\Http\Requests\Contact\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\ContactCollection</methodSignature>
+      <fullMethod>index(Playground\Crm\Resource\Http\Requests\Contact\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\ContactCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>restore(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>show(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Crm\Resource\Http\Requests\Contact\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>store(Playground\Crm\Resource\Http\Requests\Contact\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>unlock(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\ContactController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</methodSignature>
+      <fullMethod>update(Playground\Crm\Models\Contact $contact, Playground\Crm\Resource\Http\Requests\Contact\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Contact</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\IndexController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(): Illuminate\View\View</methodSignature>
+      <fullMethod>index(): Illuminate\View\View</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Crm\Resource\Http\Requests\Location\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>create(Playground\Crm\Resource\Http\Requests\Location\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>edit(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>lock(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Crm\Resource\Http\Requests\Location\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\LocationCollection</methodSignature>
+      <fullMethod>index(Playground\Crm\Resource\Http\Requests\Location\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\LocationCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>restore(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>show(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Crm\Resource\Http\Requests\Location\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>store(Playground\Crm\Resource\Http\Requests\Location\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>unlock(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\LocationController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</methodSignature>
+      <fullMethod>update(Playground\Crm\Models\Location $location, Playground\Crm\Resource\Http\Requests\Location\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Location</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Crm\Resource\Http\Requests\Organization\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>create(Playground\Crm\Resource\Http\Requests\Organization\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>edit(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>lock(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Crm\Resource\Http\Requests\Organization\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\OrganizationCollection</methodSignature>
+      <fullMethod>index(Playground\Crm\Resource\Http\Requests\Organization\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\OrganizationCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>restore(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>show(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Crm\Resource\Http\Requests\Organization\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>store(Playground\Crm\Resource\Http\Requests\Organization\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>unlock(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\OrganizationController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</methodSignature>
+      <fullMethod>update(Playground\Crm\Models\Organization $organization, Playground\Crm\Resource\Http\Requests\Organization\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\Organization</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Crm\Resource\Http\Requests\People\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>create(Playground\Crm\Resource\Http\Requests\People\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>edit(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>lock(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Crm\Resource\Http\Requests\People\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\PeopleCollection</methodSignature>
+      <fullMethod>index(Playground\Crm\Resource\Http\Requests\People\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\PeopleCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>restore(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>show(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Crm\Resource\Http\Requests\People\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>store(Playground\Crm\Resource\Http\Requests\People\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>unlock(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Controllers</package>
+      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</methodSignature>
+      <fullMethod>update(Playground\Crm\Models\People $people, Playground\Crm\Resource\Http\Requests\People\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Crm\Resource\Http\Resources\People</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Client</package>
+      <className>Playground\Crm\Resource\Http\Requests\Client\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Client</package>
+      <className>Playground\Crm\Resource\Http\Requests\Client\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Client</package>
+      <className>Playground\Crm\Resource\Http\Requests\Client\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Client</package>
+      <className>Playground\Crm\Resource\Http\Requests\Client\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Client</package>
+      <className>Playground\Crm\Resource\Http\Requests\Client\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Contact</package>
+      <className>Playground\Crm\Resource\Http\Requests\Contact\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Contact</package>
+      <className>Playground\Crm\Resource\Http\Requests\Contact\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Contact</package>
+      <className>Playground\Crm\Resource\Http\Requests\Contact\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Contact</package>
+      <className>Playground\Crm\Resource\Http\Requests\Contact\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Contact</package>
+      <className>Playground\Crm\Resource\Http\Requests\Contact\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests</package>
+      <className>Playground\Crm\Resource\Http\Requests\FormRequest</className>
+      <methodName>authorize</methodName>
+      <methodSignature>authorize(): bool</methodSignature>
+      <fullMethod>authorize(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests</package>
+      <className>Playground\Crm\Resource\Http\Requests\FormRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests</package>
+      <className>Playground\Crm\Resource\Http\Requests\FormRequest</className>
+      <methodName>userHasAdminPrivileges</methodName>
+      <methodSignature>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</methodSignature>
+      <fullMethod>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Location</package>
+      <className>Playground\Crm\Resource\Http\Requests\Location\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Location</package>
+      <className>Playground\Crm\Resource\Http\Requests\Location\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Location</package>
+      <className>Playground\Crm\Resource\Http\Requests\Location\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Location</package>
+      <className>Playground\Crm\Resource\Http\Requests\Location\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Location</package>
+      <className>Playground\Crm\Resource\Http\Requests\Location\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Organization</package>
+      <className>Playground\Crm\Resource\Http\Requests\Organization\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Organization</package>
+      <className>Playground\Crm\Resource\Http\Requests\Organization\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Organization</package>
+      <className>Playground\Crm\Resource\Http\Requests\Organization\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Organization</package>
+      <className>Playground\Crm\Resource\Http\Requests\Organization\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\Organization</package>
+      <className>Playground\Crm\Resource\Http\Requests\Organization\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\People</package>
+      <className>Playground\Crm\Resource\Http\Requests\People\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\People</package>
+      <className>Playground\Crm\Resource\Http\Requests\People\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\People</package>
+      <className>Playground\Crm\Resource\Http\Requests\People\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\People</package>
+      <className>Playground\Crm\Resource\Http\Requests\People\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Requests\People</package>
+      <className>Playground\Crm\Resource\Http\Requests\People\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\Client</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\ClientCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\Contact</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\ContactCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\Location</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\LocationCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\Organization</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\OrganizationCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\People</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource\Http\Resources</package>
+      <className>Playground\Crm\Resource\Http\Resources\PeopleCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource</package>
+      <className>Playground\Crm\Resource\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot(): void</methodSignature>
+      <fullMethod>boot(): void</fullMethod>
+      <crap>13</crap>
+      <complexity>13</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource</package>
+      <className>Playground\Crm\Resource\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource</package>
+      <className>Playground\Crm\Resource\ServiceProvider</className>
+      <methodName>setPolicies</methodName>
+      <methodSignature>setPolicies(array $policies): void</methodSignature>
+      <fullMethod>setPolicies(array $policies): void</fullMethod>
+      <crap>10</crap>
+      <complexity>10</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource</package>
+      <className>Playground\Crm\Resource\ServiceProvider</className>
+      <methodName>routes</methodName>
+      <methodSignature>routes(array $config): void</methodSignature>
+      <fullMethod>routes(array $config): void</fullMethod>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Crm\Resource</package>
+      <className>Playground\Crm\Resource\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>27</crap>
+      <complexity>27</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>
