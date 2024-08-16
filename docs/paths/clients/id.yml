@@ -1,0 +1,87 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The client id.'
+    schema:
+      type: string
+      format: uuid
+get:
+  tags:
+    - Client
+  summary: 'Get a client by id.'
+  operationId: get_client
+  responses:
+    200:
+      description: 'The client data.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/client.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+delete:
+  tags:
+    - Client
+  summary: 'Delete a client by id.'
+  operationId: delete_client
+  responses:
+    204:
+      description: 'The client has been deleted.'
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+    423:
+      description: 'The client is locked. Unlock to delete.'
+patch:
+  tags:
+    - Client
+  summary: 'Patch a client by id.'
+  operationId: patch_client
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/client/patch.yml
+  responses:
+    200:
+      description: 'The client has been patched.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/client.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+    422:
+      description: 'Validation error'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              errors:
+                type: object
+                properties:
+                  title:
+                    type: array
+                    items:
+                      type: string
+                      example: 'The title field is required.'
+    423:
+      description: 'The client is locked. Unlock to patch.'

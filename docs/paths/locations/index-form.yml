@@ -1,0 +1,28 @@
+post:
+  tags:
+    - Location
+  summary: 'Get locations from the index using POST.'
+  operationId: post_locations_index
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/location/form.yml
+  responses:
+    200:
+      description: 'Get the locations from the index.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: ../../models/location.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

@@ -1,0 +1,42 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The people id.'
+    schema:
+      type: string
+      format: uuid
+delete:
+  tags:
+    - People
+  summary: 'Delete a people by id.'
+  operationId: unlock_people
+  responses:
+    204:
+      description: 'The people has been unlocked.'
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+put:
+  tags:
+    - People
+  summary: 'Lock a people by ID.'
+  operationId: lock_people
+  responses:
+    200:
+      description: 'The unlocked people.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/people.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

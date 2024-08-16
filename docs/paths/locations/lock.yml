@@ -1,0 +1,42 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The location id.'
+    schema:
+      type: string
+      format: uuid
+delete:
+  tags:
+    - Location
+  summary: 'Delete a location by id.'
+  operationId: unlock_location
+  responses:
+    204:
+      description: 'The location has been unlocked.'
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+put:
+  tags:
+    - Location
+  summary: 'Lock a location by ID.'
+  operationId: lock_location
+  responses:
+    200:
+      description: 'The unlocked location.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/location.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

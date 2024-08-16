@@ -1,0 +1,120 @@
+openapi: 3.0.3
+info:
+  title: 'Playground CRM Resource'
+  description: 'Playground: Provides an API and a Blade UI for interacting with Playground CRM, a Client Relationship Management System for Laravel applications.'
+  version: 73.0.0
+externalDocs:
+  url: 'https://gammamatrix-playground.readthedocs.io/en/develop/components/crm.html'
+  description: 'Read the Docs: Playground CRM Packages'
+servers:
+  -
+    url: 'https://api.example.com'
+    description: 'Production Server'
+  -
+    url: 'https://api.staging.example.com'
+    description: 'Staging Server'
+  -
+    url: 'https://api.dev.example.com'
+    description: 'Dev Server'
+  -
+    url: 'http://localhost'
+    description: 'Local Server'
+tags:
+  -
+    name: Client
+    description: 'Manage clients in storage.'
+  -
+    name: Contact
+    description: 'Manage contacts in storage.'
+  -
+    name: Location
+    description: 'Manage locations in storage.'
+  -
+    name: Organization
+    description: 'Manage organizations in storage.'
+  -
+    name: People
+    description: 'Manage people in storage.'
+paths:
+  '/resource/crm/clients/{id}':
+    $ref: paths/clients/id.yml
+  /resource/crm/clients:
+    $ref: paths/clients/index.yml
+  /resource/crm/clients/index:
+    $ref: paths/clients/index-form.yml
+  '/resource/crm/clients/lock/{id}':
+    $ref: paths/clients/lock.yml
+  '/resource/crm/clients/restore/{id}':
+    $ref: paths/clients/restore.yml
+  /resource/crm/clients/create:
+    $ref: paths/clients/create.yml
+  '/resource/crm/clients/edit/{id}':
+    $ref: paths/clients/edit.yml
+  '/resource/crm/contacts/{id}':
+    $ref: paths/contacts/id.yml
+  /resource/crm/contacts:
+    $ref: paths/contacts/index.yml
+  /resource/crm/contacts/index:
+    $ref: paths/contacts/index-form.yml
+  '/resource/crm/contacts/lock/{id}':
+    $ref: paths/contacts/lock.yml
+  '/resource/crm/contacts/restore/{id}':
+    $ref: paths/contacts/restore.yml
+  /resource/crm/contacts/create:
+    $ref: paths/contacts/create.yml
+  '/resource/crm/contacts/edit/{id}':
+    $ref: paths/contacts/edit.yml
+  '/resource/crm/locations/{id}':
+    $ref: paths/locations/id.yml
+  /resource/crm/locations:
+    $ref: paths/locations/index.yml
+  /resource/crm/locations/index:
+    $ref: paths/locations/index-form.yml
+  '/resource/crm/locations/lock/{id}':
+    $ref: paths/locations/lock.yml
+  '/resource/crm/locations/restore/{id}':
+    $ref: paths/locations/restore.yml
+  /resource/crm/locations/create:
+    $ref: paths/locations/create.yml
+  '/resource/crm/locations/edit/{id}':
+    $ref: paths/locations/edit.yml
+  '/resource/crm/organizations/{id}':
+    $ref: paths/organizations/id.yml
+  /resource/crm/organizations:
+    $ref: paths/organizations/index.yml
+  /resource/crm/organizations/index:
+    $ref: paths/organizations/index-form.yml
+  '/resource/crm/organizations/lock/{id}':
+    $ref: paths/organizations/lock.yml
+  '/resource/crm/organizations/restore/{id}':
+    $ref: paths/organizations/restore.yml
+  /resource/crm/organizations/create:
+    $ref: paths/organizations/create.yml
+  '/resource/crm/organizations/edit/{id}':
+    $ref: paths/organizations/edit.yml
+  '/resource/crm/people/{id}':
+    $ref: paths/people/id.yml
+  /resource/crm/people:
+    $ref: paths/people/index.yml
+  /resource/crm/people/index:
+    $ref: paths/people/index-form.yml
+  '/resource/crm/people/lock/{id}':
+    $ref: paths/people/lock.yml
+  '/resource/crm/people/restore/{id}':
+    $ref: paths/people/restore.yml
+  /resource/crm/people/create:
+    $ref: paths/people/create.yml
+  '/resource/crm/people/edit/{id}':
+    $ref: paths/people/edit.yml
+components:
+  schemas:
+    Client:
+      $ref: models/client.yml
+    Contact:
+      $ref: models/contact.yml
+    Location:
+      $ref: models/location.yml
+    Organization:
+      $ref: models/organization.yml
+    People:
+      $ref: models/people.yml

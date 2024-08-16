@@ -1,0 +1,28 @@
+post:
+  tags:
+    - Contact
+  summary: 'Get contacts from the index using POST.'
+  operationId: post_contacts_index
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/contact/form.yml
+  responses:
+    200:
+      description: 'Get the contacts from the index.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: ../../models/contact.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

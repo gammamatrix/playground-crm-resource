@@ -1,0 +1,30 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The contact id.'
+    schema:
+      type: string
+      format: uuid
+put:
+  tags:
+    - Contact
+  summary: 'Restore a contact from the trash by ID.'
+  operationId: restore_contact
+  responses:
+    200:
+      description: 'The restored contact.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/contact.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

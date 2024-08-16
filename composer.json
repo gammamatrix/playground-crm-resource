@@ -1,0 +1,68 @@
+{
+    "name": "gammamatrix/playground-crm-resource",
+    "description": "Playground: Provides an API and a Blade UI for interacting with Playground CRM, a Client Relationship Management System for Laravel applications.",
+    "keywords": [
+        "crm",
+        "gammamatrix",
+        "laravel",
+        "playground",
+        "playground-blade"
+    ],
+    "homepage": "https://github.com/gammamatrix/playground-crm-resource",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Postlethwaite",
+            "email": "jeremy.postlethwaite@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "gammamatrix/playground": "*",
+        "gammamatrix/playground-auth": "*",
+        "gammamatrix/playground-http": "*",
+        "gammamatrix/playground-crm": "*"
+    },
+    "require-dev": {
+        "gammamatrix/playground-test": "*",
+        "gammamatrix/playground-login-blade": "*",
+        "gammamatrix/playground-site-blade": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Playground\\Crm\\Resource\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Feature\\Playground\\Crm\\Resource\\": "tests/Feature/",
+            "Tests\\Unit\\Playground\\Crm\\Resource\\": "tests/Unit/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": {
+            "gammamatrix/*": "source",
+            "*": "dist"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "73.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Playground\\Crm\\Resource\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
+        "cloc": "cloc --exclude-dir=node_modules,output,vendor .",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/testbench package:test"
+    }
+}

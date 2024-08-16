@@ -1,0 +1,28 @@
+post:
+  tags:
+    - People
+  summary: 'Get people from the index using POST.'
+  operationId: post_people_index
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../../requests/people/form.yml
+  responses:
+    200:
+      description: 'Get the people from the index.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: ../../models/people.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

@@ -1,0 +1,42 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The contact id.'
+    schema:
+      type: string
+      format: uuid
+delete:
+  tags:
+    - Contact
+  summary: 'Delete a contact by id.'
+  operationId: unlock_contact
+  responses:
+    204:
+      description: 'The contact has been unlocked.'
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+put:
+  tags:
+    - Contact
+  summary: 'Lock a contact by ID.'
+  operationId: lock_contact
+  responses:
+    200:
+      description: 'The unlocked contact.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/contact.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

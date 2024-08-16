@@ -1,0 +1,42 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The client id.'
+    schema:
+      type: string
+      format: uuid
+delete:
+  tags:
+    - Client
+  summary: 'Delete a client by id.'
+  operationId: unlock_client
+  responses:
+    204:
+      description: 'The client has been unlocked.'
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
+put:
+  tags:
+    - Client
+  summary: 'Lock a client by ID.'
+  operationId: lock_client
+  responses:
+    200:
+      description: 'The unlocked client.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/client.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden

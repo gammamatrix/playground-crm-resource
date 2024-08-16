@@ -1,0 +1,30 @@
+parameters:
+  -
+    in: path
+    name: id
+    required: true
+    description: 'The people id.'
+    schema:
+      type: string
+      format: uuid
+put:
+  tags:
+    - People
+  summary: 'Restore a people from the trash by ID.'
+  operationId: restore_people
+  responses:
+    200:
+      description: 'The restored people.'
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: ../../models/people.yml
+              meta:
+                type: object
+    401:
+      description: Unauthorized
+    403:
+      description: Forbidden
