@@ -6,10 +6,3 @@
 @section('form-tertiary')
 @include('playground-crm-resource::contact/form-publishing')
 @endsection
-
-@section('form-quaternary')
-@includeWhen(
-    !empty($_method) && 'patch' === $_method,
-    'playground-crm-resource::contact/form-revisions'
-)
-@endsection
