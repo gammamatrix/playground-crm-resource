@@ -1,0 +1,20 @@
+{
+    "class": "CommandTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/CommandTest",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "CRMResource",
+    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "command-about",
+    "uses": [],
+    "models": [],
+    "package_providers": []
+}

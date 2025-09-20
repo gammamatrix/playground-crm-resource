@@ -18,11 +18,15 @@
     "withPolicies": true,
     "withRequests": true,
     "withRoutes": true,
-    "withSwagger": true,
+    "withOpenAPI": true,
     "withTests": true,
     "playground": true,
     "revision": false,
+    "docs_name": "Playground: CRM Resource at Read the Docs: Playground Documentation",
+    "docs_url": "https://gammamatrix-playground.readthedocs.io/en/develop/built-components/crm.html",
     "package_name": "Playground: CRM Resource",
+    "model_package": "playground-crm",
+    "model_package_name": "Playground: CRM",
     "package_description": "Playground: Provides an API and a Blade UI for interacting with Playground CRM, a Client Relationship Management System for Laravel applications.",
     "package_homepage": "https://github.com/gammamatrix/playground-crm-resource",
     "package_keywords": [
@@ -41,16 +45,18 @@
         }
     ],
     "package_require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "gammamatrix/playground": "*",
         "gammamatrix/playground-auth": "*",
         "gammamatrix/playground-http": "*",
-        "gammamatrix/playground-crm": "*"
+        "gammamatrix/playground-crm": "*",
+        "illuminate/support": "^12.0"
     },
     "package_require_dev": {
         "gammamatrix/playground-test": "*",
         "gammamatrix/playground-login-blade": "*",
-        "gammamatrix/playground-site-blade": "*"
+        "gammamatrix/playground-site-blade": "*",
+        "illuminate/testing": "^12.0"
     },
     "package_suggest": [],
     "package_autoload_psr4": [],
@@ -60,14 +66,33 @@
         "Playground/Crm/Resource/ServiceProvider"
     ],
     "packagist": "gammamatrix/playground-crm-resource",
-    "controllers": [],
+    "postman_collection": "",
+    "postman_url": "",
+    "controllers": [
+        "resources/package/controller.base.json",
+        "resources/package/index/controller.json",
+        "resources/package/client/controller.json",
+        "resources/package/contact/controller.json",
+        "resources/package/location/controller.json",
+        "resources/package/organization/controller.json",
+        "resources/package/people/controller.json"
+    ],
     "models": [],
     "policies": [],
-    "requests": [],
-    "routes": [],
+    "requests": [
+        "resources/package/form.request.json"
+    ],
+    "routes": {
+        "crm": "",
+        "clients": "resources/package/client/route.json",
+        "contacts": "resources/package/contact/route.json",
+        "locations": "resources/package/location/route.json",
+        "organizations": "resources/package/organization/route.json",
+        "people": "resources/package/people/route.json"
+    },
     "transformers": [],
     "uses": [],
     "service_provider": "",
     "type": "playground-resource",
-    "version": "73.0.0"
+    "version": "74.0.0"
 }

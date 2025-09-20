@@ -1,0 +1,22 @@
+{
+    "class": "StoreRequest",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Requests/Contact/Contact",
+    "model": "Contact",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Contact",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "abstract": false,
+    "pagination": false,
+    "playground": false,
+    "store": false,
+    "slug": false,
+    "type": "store",
+    "extends": "BaseStoreRequest",
+    "extends_use": "Playground/Http/Requests/StoreRequest as BaseStoreRequest",
+    "models": []
+}

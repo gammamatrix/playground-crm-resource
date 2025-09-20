@@ -1,0 +1,17 @@
+{
+    "class": "Organization",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Resources/Organization",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Organization",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "collection": false,
+    "model": "Organization",
+    "model_fqdn": "Playground/Crm/Models/Organization",
+    "model_slug": "organization",
+    "type": "",
+    "models": []
+}

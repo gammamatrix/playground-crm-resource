@@ -1,0 +1,22 @@
+{
+    "class": "OrganizationTestCase",
+    "config": "playground-crm-resource",
+    "extends": "TestCase",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/Http/Controllers/OrganizationTestCase",
+    "model": "Organization",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "OrganizationTestCase",
+    "namespace": "Tests/Feature/Playground/Crm/Resource/Http/Controllers",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-controller-model-case",
+    "uses": [],
+    "models": {
+        "Organization": "resources/configurations/playground-crm/model.organization.json"
+    },
+    "package_providers": []
+}

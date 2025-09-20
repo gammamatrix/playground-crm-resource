@@ -1,8 +1,11 @@
-@extends('playground::layouts.resource.form', [
-    'withFormInfo' => 'playground-crm-resource::contact/form-info',
-    'withFormStatus' => 'playground-crm-resource::contact/form-status',
-])
+@extends(
+    "playground::layouts.resource.form",
+    [
+        "withFormInfo" => "playground-crm-resource::contact/form-info",
+        "withFormAccess" => true,
+    ]
+)
 
-@section('form-tertiary')
-@include('playground-crm-resource::contact/form-publishing')
+@section("fieldset-content")
+    
 @endsection

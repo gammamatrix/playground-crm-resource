@@ -1,0 +1,22 @@
+{
+    "class": "LocationTestCase",
+    "config": "playground-crm-resource",
+    "extends": "TestCase",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/Http/Controllers/LocationTestCase",
+    "model": "Location",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "LocationTestCase",
+    "namespace": "Tests/Feature/Playground/Crm/Resource/Http/Controllers",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-controller-model-case",
+    "uses": [],
+    "models": {
+        "Location": "resources/configurations/playground-crm/model.location.json"
+    },
+    "package_providers": []
+}

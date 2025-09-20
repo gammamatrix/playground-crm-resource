@@ -1,0 +1,17 @@
+{
+    "class": "LocationCollection",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Resources/LocationCollection",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "LocationCollection",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "collection": true,
+    "model": "Location",
+    "model_fqdn": "Playground/Crm/Models/Location",
+    "model_slug": "location",
+    "type": "",
+    "models": []
+}

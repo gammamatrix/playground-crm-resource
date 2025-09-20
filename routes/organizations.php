@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Playground
  */
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'prefix' => 'api/crm/organization',
+    'prefix' => 'resource/crm/organization',
     'middleware' => config('playground-crm-resource.middleware.default'),
     'namespace' => '\Playground\Crm\Resource\Http\Controllers',
 ], function () {
@@ -62,7 +63,7 @@ Route::group([
     Route::get('/{organization}', [
         'as' => 'playground.crm.resource.organizations.show',
         'uses' => 'OrganizationController@show',
-    ])->whereUuid('organization')->can('detail', 'organization');
+    ])->whereUuid('organization')->can('detail', 'organization')->withTrashed();
 
     // API
 

@@ -1,0 +1,22 @@
+{
+    "class": "contact/index.blade",
+    "config": "playground-crm-resource",
+    "fqdn": "contact/index.blade",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Contact",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "extends": "playground::layouts.resource",
+    "folder": "contact",
+    "model": "Contact",
+    "model_column": "contact",
+    "model_label": "Contact",
+    "type": "playground-resource",
+    "route": "playground.crm.resource",
+    "title": "Contact",
+    "models": {
+        "Contact": "resources/configurations/playground-crm/model.contact.json"
+    }
+}

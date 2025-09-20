@@ -1,0 +1,22 @@
+{
+    "class": "CreateRequest",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Requests/Organization/Organization",
+    "model": "Organization",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Organization",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "abstract": false,
+    "pagination": false,
+    "playground": false,
+    "store": false,
+    "slug": false,
+    "type": "create",
+    "extends": "FormRequest",
+    "extends_use": "Playground/Crm/Resource/Http/Requests/FormRequest",
+    "models": []
+}

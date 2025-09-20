@@ -1,0 +1,23 @@
+{
+    "class": "EditRequestTest",
+    "config": "playground-crm-resource",
+    "extends": "RequestCase",
+    "fqdn": "Tests/Unit/Playground/Crm/Resource/EditRequestTest",
+    "model": "Client",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "EditRequestTest",
+    "namespace": "Tests/Unit/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "unit",
+    "type": "playground-request-model",
+    "uses": [
+        "Tests/Unit/Playground/Crm/Resource/PackageProviders",
+        "Playground/Test/Unit/Http/Requests/RequestCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

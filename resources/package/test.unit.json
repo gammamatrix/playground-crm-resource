@@ -1,0 +1,22 @@
+{
+    "class": "TestCase",
+    "config": "playground-crm-resource",
+    "extends": "OrchestraTestCase",
+    "fqdn": "Tests/Unit/Playground/Crm/Resource/TestCase",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "TestCase",
+    "namespace": "Tests/Unit/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "unit",
+    "type": "playground-resource-test-case",
+    "uses": [
+        "Playground/Test/OrchestraTestCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

@@ -1,0 +1,31 @@
+{
+    "class": "PeoplePolicy",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Policies/People",
+    "model": "People",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "People",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "withTests": true,
+    "playground": false,
+    "models": [],
+    "uses": [],
+    "rolesForAction": [
+        "publisher",
+        "manager",
+        "admin",
+        "root"
+    ],
+    "rolesToView": [
+        "user",
+        "staff",
+        "publisher",
+        "manager",
+        "admin",
+        "root"
+    ]
+}

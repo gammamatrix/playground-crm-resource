@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Crm\Resource\Http\Requests\Client;
 
 use Playground\Http\Requests\StoreRequest as BaseStoreRequest;
@@ -104,27 +106,6 @@ class StoreRequest extends BaseStoreRequest
     ];
 
     protected string $slug_table = 'crm_clients';
-
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
-     */
-    public function rules(): array
-    {
-        $rules = parent::rules();
-
-        /**
-         * @var array<string, bool> $revisions
-         */
-        $revisions = config('playground-crm-resource.revisions');
-
-        if (! empty($revisions['optional'])) {
-            $rules['revision'] = 'bool';
-        }
-
-        return $rules;
-    }
 
     /**
      * Prepare the data for validation.

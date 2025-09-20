@@ -1,0 +1,22 @@
+{
+    "class": "PeopleRouteTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/PeopleRouteTest",
+    "model": "People",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "PeopleRouteTest",
+    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-controller-model-user",
+    "uses": [],
+    "models": {
+        "People": "resources/configurations/playground-crm/model.people.json"
+    },
+    "package_providers": []
+}

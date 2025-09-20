@@ -1,0 +1,17 @@
+{
+    "class": "Client",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Resources/Client",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Client",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "collection": false,
+    "model": "Client",
+    "model_fqdn": "Playground/Crm/Models/Client",
+    "model_slug": "client",
+    "type": "",
+    "models": []
+}

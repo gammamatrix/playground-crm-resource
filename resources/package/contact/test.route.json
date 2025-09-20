@@ -1,0 +1,22 @@
+{
+    "class": "ContactRouteTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/ContactRouteTest",
+    "model": "Contact",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "ContactRouteTest",
+    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-controller-model-user",
+    "uses": [],
+    "models": {
+        "Contact": "resources/configurations/playground-crm/model.contact.json"
+    },
+    "package_providers": []
+}

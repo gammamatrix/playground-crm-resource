@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Playground
  */
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'prefix' => 'api/crm/contact',
+    'prefix' => 'resource/crm/contact',
     'middleware' => config('playground-crm-resource.middleware.default'),
     'namespace' => '\Playground\Crm\Resource\Http\Controllers',
 ], function () {
@@ -62,7 +63,7 @@ Route::group([
     Route::get('/{contact}', [
         'as' => 'playground.crm.resource.contacts.show',
         'uses' => 'ContactController@show',
-    ])->whereUuid('contact')->can('detail', 'contact');
+    ])->whereUuid('contact')->can('detail', 'contact')->withTrashed();
 
     // API
 

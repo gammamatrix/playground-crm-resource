@@ -1,0 +1,31 @@
+{
+    "class": "ContactPolicy",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Policies/Contact",
+    "model": "Contact",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Contact",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "withTests": true,
+    "playground": false,
+    "models": [],
+    "uses": [],
+    "rolesForAction": [
+        "publisher",
+        "manager",
+        "admin",
+        "root"
+    ],
+    "rolesToView": [
+        "user",
+        "staff",
+        "publisher",
+        "manager",
+        "admin",
+        "root"
+    ]
+}

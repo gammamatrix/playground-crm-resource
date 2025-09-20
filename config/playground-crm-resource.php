@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Playground
  */
@@ -7,6 +8,42 @@ declare(strict_types=1);
 
 /**
  * Playground: CRM Resource Configuration and Environment Variables
+ *
+ * @return array{
+ *       about: bool,
+ *       layout: string,
+ *       load: array{
+ *           policies: bool,
+ *           routes: bool,
+ *           translations: bool,
+ *           views: bool
+ *       },
+ *       middleware: array{
+ *           default: string|string[],
+ *           auth: string|string[],
+ *           guest: string|string[]
+ *       },
+ *       policies: array<
+ *           class-string<\Illuminate\Database\Eloquent\Model>,
+ *           class-string<\Playground\Auth\Policies\Policy>
+ *       >,
+ *       routes: array{
+ *           crm: bool,
+ *           clients: bool,
+ *           contacts: bool,
+ *           locations: bool,
+ *           organizations: bool,
+ *           people: bool,
+ *       },
+ *       blade: string,
+ *       abilities: array<string, string[]>,
+ *       sitemap: array{
+ *            enable: bool,
+ *            guest: bool,
+ *            user: bool,
+ *            view: string
+ *       }
+ *   }
  */
 return [
 
@@ -78,12 +115,12 @@ return [
     */
 
     'routes' => [
-        'crm' => (bool) env('PLAYGROUND_CRM_RESOURCE_CRM', true),
-        'clients' => (bool) env('PLAYGROUND_CRM_RESOURCE_CLIENTS', true),
-        'contacts' => (bool) env('PLAYGROUND_CRM_RESOURCE_CONTACTS', true),
-        'locations' => (bool) env('PLAYGROUND_CRM_RESOURCE_LOCATIONS', true),
-        'organizations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ORGANIZATIONS', true),
-        'people' => (bool) env('PLAYGROUND_CRM_RESOURCE_PEOPLE', true),
+        'crm' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CRM', true),
+        'clients' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CLIENTS', true),
+        'contacts' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CONTACTS', true),
+        'locations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_LOCATIONS', true),
+        'organizations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_ORGANIZATIONS', true),
+        'people' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_PEOPLE', true),
     ],
 
     /*

@@ -1,0 +1,22 @@
+{
+    "class": "ClientRouteTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/ClientRouteTest",
+    "model": "Client",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "ClientRouteTest",
+    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-controller-model-user",
+    "uses": [],
+    "models": {
+        "Client": "resources/configurations/playground-crm/model.client.json"
+    },
+    "package_providers": []
+}

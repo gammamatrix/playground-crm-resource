@@ -1,0 +1,22 @@
+{
+    "class": "organization/index.blade",
+    "config": "playground-crm-resource",
+    "fqdn": "organization/index.blade",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Organization",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "extends": "playground::layouts.resource",
+    "folder": "organization",
+    "model": "Organization",
+    "model_column": "organization",
+    "model_label": "Organization",
+    "type": "playground-resource",
+    "route": "playground.crm.resource",
+    "title": "Organization",
+    "models": {
+        "Organization": "resources/configurations/playground-crm/model.organization.json"
+    }
+}

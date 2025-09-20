@@ -1,0 +1,23 @@
+{
+    "class": "PolicyTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Unit/Playground/Crm/Resource/Policies/ClientPolicy/PolicyTest",
+    "model": "Client",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "PolicyTest",
+    "namespace": "Tests/Unit/Playground/Crm/Resource/Policies/ClientPolicy",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "unit",
+    "type": "policy",
+    "uses": [
+        "Tests/Unit/Playground/Crm/Resource/TestCase",
+        "Playground/Crm/Resource/Policies/ClientPolicy"
+    ],
+    "models": [],
+    "package_providers": []
+}

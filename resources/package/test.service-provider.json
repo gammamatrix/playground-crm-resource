@@ -1,0 +1,20 @@
+{
+    "class": "InstanceTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Unit/Playground/Crm/Resource/ServiceProvider/InstanceTest",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "InstanceTest",
+    "namespace": "Tests/Unit/Playground/Crm/Resource/ServiceProvider",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "unit",
+    "type": "playground-service-provider-policies",
+    "uses": [],
+    "models": [],
+    "package_providers": []
+}

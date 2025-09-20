@@ -1,0 +1,20 @@
+{
+    "class": "IndexRouteTest",
+    "config": "playground-crm-resource",
+    "extends": "",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/IndexRouteTest",
+    "model": "Client",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "IndexRouteTest",
+    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "playground": true,
+    "suite": "feature",
+    "type": "playground-resource-index",
+    "uses": [],
+    "models": [],
+    "package_providers": []
+}

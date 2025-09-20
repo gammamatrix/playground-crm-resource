@@ -1,0 +1,22 @@
+{
+    "class": "people/index.blade",
+    "config": "playground-crm-resource",
+    "fqdn": "people/index.blade",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "People",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "extends": "playground::layouts.resource",
+    "folder": "people",
+    "model": "People",
+    "model_column": "people",
+    "model_label": "People",
+    "type": "playground-resource",
+    "route": "playground.crm.resource",
+    "title": "People",
+    "models": {
+        "People": "resources/configurations/playground-crm/model.people.json"
+    }
+}

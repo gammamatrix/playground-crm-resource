@@ -1,0 +1,17 @@
+{
+    "class": "People",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Resources/People",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "People",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "collection": false,
+    "model": "People",
+    "model_fqdn": "Playground/Crm/Models/People",
+    "model_slug": "people",
+    "type": "",
+    "models": []
+}

@@ -1,0 +1,22 @@
+{
+    "class": "UpdateRequest",
+    "config": "playground-crm-resource",
+    "fqdn": "Playground/Crm/Resource/Http/Requests/People/People",
+    "model": "People",
+    "model_fqdn": "",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "People",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "abstract": false,
+    "pagination": false,
+    "playground": false,
+    "store": false,
+    "slug": false,
+    "type": "update",
+    "extends": "BaseUpdateRequest",
+    "extends_use": "Playground/Http/Requests/UpdateRequest as BaseUpdateRequest",
+    "models": []
+}

@@ -1,14 +1,16 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Crm\Resource\Console\Commands\About;
 
-use Illuminate\Console\Command;
 use PHPUnit\Framework\Attributes\CoversClass;
 use Playground\Crm\Resource\ServiceProvider;
+use Symfony\Component\Console\Command\Command;
 use Tests\Feature\Playground\Crm\Resource\TestCase;
 
 /**
