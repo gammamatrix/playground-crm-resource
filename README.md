@@ -36,14 +36,14 @@ Install npm.
 npm install
 ```
 
-Build the documentation to generate the [openapi.json](openapi.json) configuration.
+Build the documentation to generate the [openapi.yaml](openapi.yaml) configuration.
 
 ```sh
 npm run docs
 ```
 
 Documentation
-- Preview [openapi.json on the Redocly Editor UI.](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/gammamatrix/playground-crm-resource/develop/openapi.json)
+- Preview [openapi.yaml on the Redocly Editor UI.](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/gammamatrix/playground-crm-resource/develop/openapi.yaml)
 
 ## Installation
 
@@ -96,23 +96,23 @@ composer cloc
 
 ```
 ➜  playground-crm-resource git:(develop) ✗ composer cloc
-     426 text files.
-     416 unique files.
+     430 text files.
+     420 unique files.
       95 files ignored.
 
-github.com/AlDanial/cloc v 2.06  T=0.13 s (3168.2 files/s, 289323.5 lines/s)
+github.com/AlDanial/cloc v 2.06  T=0.14 s (2931.8 files/s, 309164.3 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 JSON                           169              0              0          17210
+YAML                            54              5              0          11360
 PHP                            156           1677           2094           7082
-YAML                            53              5              0           5133
 Blade                           25            152              0           3602
-XML                              9              0              7            827
+XML                             12              0              7            901
 Markdown                         3             55              1            129
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                           416           1892           2102          33995
+SUM:                           420           1892           2102          40296
 -------------------------------------------------------------------------------
 ```
 
