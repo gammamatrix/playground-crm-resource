@@ -9,7 +9,6 @@ parameters:
 
     paths:
         - config
-        - lang
         - resources
         - routes
         - src
