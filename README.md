@@ -21,7 +21,7 @@ A postman collection is provided in the repository: [postman-playground-crm-reso
 
 ### OpenAPI
 
-This application provides OpenAPI documentation: [openapi.json](openapi.json).
+This application provides OpenAPI documentation: [openapi.yaml](openapi.yaml).
 - The endpoint models support locks, trash with force delete, restoring, revisions and more.
 - Index endpoints support advanced query filtering.
 
