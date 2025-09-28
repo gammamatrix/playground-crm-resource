@@ -54,8 +54,6 @@ class OrganizationController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         $organization = new Organization($validated);
 
         if ($request->expectsJson()) {
@@ -63,6 +61,8 @@ class OrganizationController extends Controller
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $meta = [
             'session_user_id' => $user?->id,
@@ -110,13 +110,13 @@ class OrganizationController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         if ($request->expectsJson()) {
             return new Resources\Organization($organization)->additional(['meta' => [
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $flash = $organization->toArray();
 
@@ -243,8 +243,6 @@ class OrganizationController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $user = $request->user();
-
         /**
          * @var array{
          *     sort: string|array<mixed>,
@@ -294,6 +292,8 @@ class OrganizationController extends Controller
             return new Resources\OrganizationCollection($paginator)->response($request);
         }
 
+        $user = $request->user();
+
         $meta = [
             'session_user_id' => $user?->id,
             'columns' => $request->getPaginationColumns(),
@@ -336,9 +336,7 @@ class OrganizationController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $organization->modified_by_id = $user->id;
-        }
+        $organization->modified_by_id = $user?->id;
 
         $organization->restore();
 
@@ -372,7 +370,11 @@ class OrganizationController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $validated = $request->validated();
+        if ($request->expectsJson()) {
+            return new Resources\Organization($organization)->additional(['meta' => [
+                'info' => $packageInfo,
+            ]])->response($request);
+        }
 
         $user = $request->user();
 
@@ -382,12 +384,6 @@ class OrganizationController extends Controller
             'timestamp' => Carbon::now()->toJson(),
             'info' => $packageInfo,
         ];
-
-        if ($request->expectsJson()) {
-            return new Resources\Organization($organization)->additional(['meta' => [
-                'info' => $packageInfo,
-            ]])->response($request);
-        }
 
         $data = [
             'data' => $organization,
@@ -419,16 +415,14 @@ class OrganizationController extends Controller
 
         $organization = new Organization($validated);
 
-        if ($user?->id) {
-            $organization->created_by_id = $user->id;
-        }
+        $organization->created_by_id = $user?->id;
 
         $organization->save();
 
         if ($request->expectsJson()) {
             return new Resources\Organization($organization)->additional(['meta' => [
                 'info' => $packageInfo,
-            ]])->response($request);
+            ]])->response($request)->setStatusCode(201);
         }
 
         $returnUrl = $validated['_return_url'] ?? '';
@@ -461,9 +455,7 @@ class OrganizationController extends Controller
 
         $organization->locked = false;
 
-        if ($user?->id) {
-            $organization->modified_by_id = $user->id;
-        }
+        $organization->modified_by_id = $user?->id;
 
         $organization->save();
 
@@ -501,9 +493,7 @@ class OrganizationController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $organization->modified_by_id = $user->id;
-        }
+        $organization->modified_by_id = $user?->id;
 
         $organization->update($validated);
 

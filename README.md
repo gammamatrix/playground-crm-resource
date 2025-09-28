@@ -98,21 +98,21 @@ composer cloc
 ➜  playground-crm-resource git:(develop) ✗ composer cloc
      430 text files.
      420 unique files.
-      95 files ignored.
+     105 files ignored.
 
-github.com/AlDanial/cloc v 2.06  T=0.14 s (2931.8 files/s, 309164.3 lines/s)
+github.com/AlDanial/cloc v 2.06  T=0.15 s (2788.8 files/s, 294193.5 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                           169              0              0          17210
+JSON                           169              0              0          17215
 YAML                            54              5              0          11360
-PHP                            156           1677           2094           7082
+PHP                            156           1672           2094           7037
 Blade                           25            152              0           3602
-XML                             12              0              7            901
-Markdown                         3             55              1            129
+XML                             12              0              7            952
+Markdown                         3             58              1            137
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                           420           1892           2102          40296
+SUM:                           420           1890           2102          40315
 -------------------------------------------------------------------------------
 ```
 
@@ -120,7 +120,6 @@ SUM:                           420           1892           2102          40296
 
 Tests at level 10 on:
 - `config/`
-- `lang/`
 - `resources/views/`
 - `routes/`
 - `src/`
@@ -133,8 +132,20 @@ composer analyse
 
 ## Coding Standards
 
+Format source code:
 ```sh
 composer format
+```
+
+Format blades in resources/views:
+
+```sh
+composer format-blade
+```
+- **NOTE:** requires installing dev packages from package.json.
+
+```sh
+npm install
 ```
 
 ## Testing

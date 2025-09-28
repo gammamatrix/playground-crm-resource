@@ -54,8 +54,6 @@ class LocationController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         $location = new Location($validated);
 
         if ($request->expectsJson()) {
@@ -63,6 +61,8 @@ class LocationController extends Controller
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $meta = [
             'session_user_id' => $user?->id,
@@ -110,13 +110,13 @@ class LocationController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         if ($request->expectsJson()) {
             return new Resources\Location($location)->additional(['meta' => [
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $flash = $location->toArray();
 
@@ -243,8 +243,6 @@ class LocationController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $user = $request->user();
-
         /**
          * @var array{
          *     sort: string|array<mixed>,
@@ -294,6 +292,8 @@ class LocationController extends Controller
             return new Resources\LocationCollection($paginator)->response($request);
         }
 
+        $user = $request->user();
+
         $meta = [
             'session_user_id' => $user?->id,
             'columns' => $request->getPaginationColumns(),
@@ -336,9 +336,7 @@ class LocationController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $location->modified_by_id = $user->id;
-        }
+        $location->modified_by_id = $user?->id;
 
         $location->restore();
 
@@ -372,7 +370,11 @@ class LocationController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $validated = $request->validated();
+        if ($request->expectsJson()) {
+            return new Resources\Location($location)->additional(['meta' => [
+                'info' => $packageInfo,
+            ]])->response($request);
+        }
 
         $user = $request->user();
 
@@ -382,12 +384,6 @@ class LocationController extends Controller
             'timestamp' => Carbon::now()->toJson(),
             'info' => $packageInfo,
         ];
-
-        if ($request->expectsJson()) {
-            return new Resources\Location($location)->additional(['meta' => [
-                'info' => $packageInfo,
-            ]])->response($request);
-        }
 
         $data = [
             'data' => $location,
@@ -419,16 +415,14 @@ class LocationController extends Controller
 
         $location = new Location($validated);
 
-        if ($user?->id) {
-            $location->created_by_id = $user->id;
-        }
+        $location->created_by_id = $user?->id;
 
         $location->save();
 
         if ($request->expectsJson()) {
             return new Resources\Location($location)->additional(['meta' => [
                 'info' => $packageInfo,
-            ]])->response($request);
+            ]])->response($request)->setStatusCode(201);
         }
 
         $returnUrl = $validated['_return_url'] ?? '';
@@ -461,9 +455,7 @@ class LocationController extends Controller
 
         $location->locked = false;
 
-        if ($user?->id) {
-            $location->modified_by_id = $user->id;
-        }
+        $location->modified_by_id = $user?->id;
 
         $location->save();
 
@@ -501,9 +493,7 @@ class LocationController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $location->modified_by_id = $user->id;
-        }
+        $location->modified_by_id = $user?->id;
 
         $location->update($validated);
 

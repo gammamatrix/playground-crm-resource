@@ -54,8 +54,6 @@ class ContactController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         $contact = new Contact($validated);
 
         if ($request->expectsJson()) {
@@ -63,6 +61,8 @@ class ContactController extends Controller
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $meta = [
             'session_user_id' => $user?->id,
@@ -110,13 +110,13 @@ class ContactController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         if ($request->expectsJson()) {
             return new Resources\Contact($contact)->additional(['meta' => [
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $flash = $contact->toArray();
 
@@ -243,8 +243,6 @@ class ContactController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $user = $request->user();
-
         /**
          * @var array{
          *     sort: string|array<mixed>,
@@ -294,6 +292,8 @@ class ContactController extends Controller
             return new Resources\ContactCollection($paginator)->response($request);
         }
 
+        $user = $request->user();
+
         $meta = [
             'session_user_id' => $user?->id,
             'columns' => $request->getPaginationColumns(),
@@ -336,9 +336,7 @@ class ContactController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $contact->modified_by_id = $user->id;
-        }
+        $contact->modified_by_id = $user?->id;
 
         $contact->restore();
 
@@ -372,7 +370,11 @@ class ContactController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $validated = $request->validated();
+        if ($request->expectsJson()) {
+            return new Resources\Contact($contact)->additional(['meta' => [
+                'info' => $packageInfo,
+            ]])->response($request);
+        }
 
         $user = $request->user();
 
@@ -382,12 +384,6 @@ class ContactController extends Controller
             'timestamp' => Carbon::now()->toJson(),
             'info' => $packageInfo,
         ];
-
-        if ($request->expectsJson()) {
-            return new Resources\Contact($contact)->additional(['meta' => [
-                'info' => $packageInfo,
-            ]])->response($request);
-        }
 
         $data = [
             'data' => $contact,
@@ -419,16 +415,14 @@ class ContactController extends Controller
 
         $contact = new Contact($validated);
 
-        if ($user?->id) {
-            $contact->created_by_id = $user->id;
-        }
+        $contact->created_by_id = $user?->id;
 
         $contact->save();
 
         if ($request->expectsJson()) {
             return new Resources\Contact($contact)->additional(['meta' => [
                 'info' => $packageInfo,
-            ]])->response($request);
+            ]])->response($request)->setStatusCode(201);
         }
 
         $returnUrl = $validated['_return_url'] ?? '';
@@ -461,9 +455,7 @@ class ContactController extends Controller
 
         $contact->locked = false;
 
-        if ($user?->id) {
-            $contact->modified_by_id = $user->id;
-        }
+        $contact->modified_by_id = $user?->id;
 
         $contact->save();
 
@@ -501,9 +493,7 @@ class ContactController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $contact->modified_by_id = $user->id;
-        }
+        $contact->modified_by_id = $user?->id;
 
         $contact->update($validated);
 

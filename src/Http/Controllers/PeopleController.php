@@ -54,8 +54,6 @@ class PeopleController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         $people = new People($validated);
 
         if ($request->expectsJson()) {
@@ -63,6 +61,8 @@ class PeopleController extends Controller
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $meta = [
             'session_user_id' => $user?->id,
@@ -110,13 +110,13 @@ class PeopleController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         if ($request->expectsJson()) {
             return new Resources\People($people)->additional(['meta' => [
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $flash = $people->toArray();
 
@@ -243,8 +243,6 @@ class PeopleController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $user = $request->user();
-
         /**
          * @var array{
          *     sort: string|array<mixed>,
@@ -294,6 +292,8 @@ class PeopleController extends Controller
             return new Resources\PeopleCollection($paginator)->response($request);
         }
 
+        $user = $request->user();
+
         $meta = [
             'session_user_id' => $user?->id,
             'columns' => $request->getPaginationColumns(),
@@ -336,9 +336,7 @@ class PeopleController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $people->modified_by_id = $user->id;
-        }
+        $people->modified_by_id = $user?->id;
 
         $people->restore();
 
@@ -372,7 +370,11 @@ class PeopleController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $validated = $request->validated();
+        if ($request->expectsJson()) {
+            return new Resources\People($people)->additional(['meta' => [
+                'info' => $packageInfo,
+            ]])->response($request);
+        }
 
         $user = $request->user();
 
@@ -382,12 +384,6 @@ class PeopleController extends Controller
             'timestamp' => Carbon::now()->toJson(),
             'info' => $packageInfo,
         ];
-
-        if ($request->expectsJson()) {
-            return new Resources\People($people)->additional(['meta' => [
-                'info' => $packageInfo,
-            ]])->response($request);
-        }
 
         $data = [
             'data' => $people,
@@ -419,16 +415,14 @@ class PeopleController extends Controller
 
         $people = new People($validated);
 
-        if ($user?->id) {
-            $people->created_by_id = $user->id;
-        }
+        $people->created_by_id = $user?->id;
 
         $people->save();
 
         if ($request->expectsJson()) {
             return new Resources\People($people)->additional(['meta' => [
                 'info' => $packageInfo,
-            ]])->response($request);
+            ]])->response($request)->setStatusCode(201);
         }
 
         $returnUrl = $validated['_return_url'] ?? '';
@@ -461,9 +455,7 @@ class PeopleController extends Controller
 
         $people->locked = false;
 
-        if ($user?->id) {
-            $people->modified_by_id = $user->id;
-        }
+        $people->modified_by_id = $user?->id;
 
         $people->save();
 
@@ -501,9 +493,7 @@ class PeopleController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $people->modified_by_id = $user->id;
-        }
+        $people->modified_by_id = $user?->id;
 
         $people->update($validated);
 

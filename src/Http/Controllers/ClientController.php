@@ -54,8 +54,6 @@ class ClientController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         $client = new Client($validated);
 
         if ($request->expectsJson()) {
@@ -63,6 +61,8 @@ class ClientController extends Controller
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $meta = [
             'session_user_id' => $user?->id,
@@ -110,13 +110,13 @@ class ClientController extends Controller
 
         $validated = $request->validated();
 
-        $user = $request->user();
-
         if ($request->expectsJson()) {
             return new Resources\Client($client)->additional(['meta' => [
                 'info' => $packageInfo,
             ]])->response($request);
         }
+
+        $user = $request->user();
 
         $flash = $client->toArray();
 
@@ -243,8 +243,6 @@ class ClientController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $user = $request->user();
-
         /**
          * @var array{
          *     sort: string|array<mixed>,
@@ -294,6 +292,8 @@ class ClientController extends Controller
             return new Resources\ClientCollection($paginator)->response($request);
         }
 
+        $user = $request->user();
+
         $meta = [
             'session_user_id' => $user?->id,
             'columns' => $request->getPaginationColumns(),
@@ -336,9 +336,7 @@ class ClientController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $client->modified_by_id = $user->id;
-        }
+        $client->modified_by_id = $user?->id;
 
         $client->restore();
 
@@ -372,7 +370,11 @@ class ClientController extends Controller
 
         $packageInfo = $this->packageInfo();
 
-        $validated = $request->validated();
+        if ($request->expectsJson()) {
+            return new Resources\Client($client)->additional(['meta' => [
+                'info' => $packageInfo,
+            ]])->response($request);
+        }
 
         $user = $request->user();
 
@@ -382,12 +384,6 @@ class ClientController extends Controller
             'timestamp' => Carbon::now()->toJson(),
             'info' => $packageInfo,
         ];
-
-        if ($request->expectsJson()) {
-            return new Resources\Client($client)->additional(['meta' => [
-                'info' => $packageInfo,
-            ]])->response($request);
-        }
 
         $data = [
             'data' => $client,
@@ -419,16 +415,14 @@ class ClientController extends Controller
 
         $client = new Client($validated);
 
-        if ($user?->id) {
-            $client->created_by_id = $user->id;
-        }
+        $client->created_by_id = $user?->id;
 
         $client->save();
 
         if ($request->expectsJson()) {
             return new Resources\Client($client)->additional(['meta' => [
                 'info' => $packageInfo,
-            ]])->response($request);
+            ]])->response($request)->setStatusCode(201);
         }
 
         $returnUrl = $validated['_return_url'] ?? '';
@@ -461,9 +455,7 @@ class ClientController extends Controller
 
         $client->locked = false;
 
-        if ($user?->id) {
-            $client->modified_by_id = $user->id;
-        }
+        $client->modified_by_id = $user?->id;
 
         $client->save();
 
@@ -501,9 +493,7 @@ class ClientController extends Controller
 
         $user = $request->user();
 
-        if ($user?->id) {
-            $client->modified_by_id = $user->id;
-        }
+        $client->modified_by_id = $user?->id;
 
         $client->update($validated);
 
