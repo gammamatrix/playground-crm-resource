@@ -33,7 +33,7 @@ class LocationController extends Controller
         'model_slug' => 'location',
         'model_slug_plural' => 'locations',
         'module_label' => 'CRM',
-        'module_label_plural' => 'CRMS',
+        'module_label_plural' => 'CRMs',
         'module_route' => 'playground.crm.resource',
         'module_slug' => 'crm',
         'privilege' => 'playground-crm-resource:location',

@@ -44,7 +44,7 @@
         "model_slug": "",
         "model_slug_plural": "",
         "module_label": "CRM",
-        "module_label_plural": "CRMS",
+        "module_label_plural": "CRMs",
         "module_route": "playground.crm.resource",
         "module_slug": "",
         "privilege": "playground-crm-resource",
