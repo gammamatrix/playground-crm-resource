@@ -5,6 +5,18 @@
  */
 
 declare(strict_types=1);
+use Illuminate\Database\Eloquent\Model;
+use Playground\Auth\Policies\Policy;
+use Playground\Crm\Models\Client;
+use Playground\Crm\Models\Contact;
+use Playground\Crm\Models\Location;
+use Playground\Crm\Models\Organization;
+use Playground\Crm\Models\People;
+use Playground\Crm\Resource\Policies\ClientPolicy;
+use Playground\Crm\Resource\Policies\ContactPolicy;
+use Playground\Crm\Resource\Policies\LocationPolicy;
+use Playground\Crm\Resource\Policies\OrganizationPolicy;
+use Playground\Crm\Resource\Policies\PeoplePolicy;
 
 /**
  * Playground: CRM Resource Configuration and Environment Variables
@@ -18,14 +30,17 @@ declare(strict_types=1);
  *           translations: bool,
  *           views: bool
  *       },
+ *       matrix: array{
+ *           enabled: bool,
+ *       },
  *       middleware: array{
  *           default: string|string[],
  *           auth: string|string[],
  *           guest: string|string[]
  *       },
  *       policies: array<
- *           class-string<\Illuminate\Database\Eloquent\Model>,
- *           class-string<\Playground\Auth\Policies\Policy>
+ *           class-string<Model>,
+ *           class-string<Policy>
  *       >,
  *       routes: array{
  *           crm: bool,
@@ -33,7 +48,7 @@ declare(strict_types=1);
  *           contacts: bool,
  *           locations: bool,
  *           organizations: bool,
- *           people: bool,
+ *           peoples: bool,
  *       },
  *       blade: string,
  *       abilities: array<string, string[]>,
@@ -78,6 +93,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Matrix
+    |--------------------------------------------------------------------------
+    |
+    |
+    */
+
+    'matrix' => [
+        'enabled' => (bool) env('PLAYGROUND_CRM_RESOURCE_MATRIX_ENABLED', false),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Middleware
     |--------------------------------------------------------------------------
     |
@@ -99,11 +126,11 @@ return [
     */
 
     'policies' => [
-        Playground\Crm\Models\Client::class => Playground\Crm\Resource\Policies\ClientPolicy::class,
-        Playground\Crm\Models\Contact::class => Playground\Crm\Resource\Policies\ContactPolicy::class,
-        Playground\Crm\Models\Location::class => Playground\Crm\Resource\Policies\LocationPolicy::class,
-        Playground\Crm\Models\Organization::class => Playground\Crm\Resource\Policies\OrganizationPolicy::class,
-        Playground\Crm\Models\People::class => Playground\Crm\Resource\Policies\PeoplePolicy::class,
+        Client::class => ClientPolicy::class,
+        Contact::class => ContactPolicy::class,
+        Location::class => LocationPolicy::class,
+        Organization::class => OrganizationPolicy::class,
+        People::class => PeoplePolicy::class,
     ],
 
     /*
@@ -120,7 +147,7 @@ return [
         'contacts' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CONTACTS', true),
         'locations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_LOCATIONS', true),
         'organizations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_ORGANIZATIONS', true),
-        'people' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_PEOPLE', true),
+        'peoples' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_PEOPLES', true),
     ],
 
     /*

@@ -20,6 +20,26 @@ properties:
     type: string
     format: uuid
     nullable: true
+  contact_id:
+    description: 'Foreign key: links a contact to this client.'
+    type: string
+    format: uuid
+    nullable: true
+  location_id:
+    description: 'Foreign key: links a location to this client.'
+    type: string
+    format: uuid
+    nullable: true
+  organization_id:
+    description: 'Foreign key: links an organization to this client.'
+    type: string
+    format: uuid
+    nullable: true
+  people_id:
+    description: 'Foreign key: links a people to this client.'
+    type: string
+    format: uuid
+    nullable: true
   canceled_at:
     description: 'The canceled at date for this client.'
     type: string
@@ -65,13 +85,13 @@ properties:
     type: string
     format: date-time
     nullable: true
-  resumed_at:
-    description: 'The resumed at date for this client.'
+  resolved_at:
+    description: 'The resolved at date for this client.'
     type: string
     format: date-time
     nullable: true
-  resolved_at:
-    description: 'The resolved at date for this client.'
+  resumed_at:
+    description: 'The resumed at date for this client.'
     type: string
     format: date-time
     nullable: true
@@ -251,6 +271,10 @@ properties:
     nullable: true
   summary:
     description: 'The summary of the client. Allows HTML.'
+    type: string
+    nullable: true
+  email:
+    description: 'The email of the client.'
     type: string
     nullable: true
   phone:

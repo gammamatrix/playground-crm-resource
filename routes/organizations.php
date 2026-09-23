@@ -7,6 +7,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Playground\Crm\Models\Organization;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,19 +37,19 @@ Route::group([
     Route::get('/', [
         'as' => 'playground.crm.resource.organizations',
         'uses' => 'OrganizationController@index',
-    ])->can('index', Playground\Crm\Models\Organization::class);
+    ])->can('index', Organization::class);
 
     Route::post('/index', [
         'as' => 'playground.crm.resource.organizations.index',
         'uses' => 'OrganizationController@index',
-    ])->can('index', Playground\Crm\Models\Organization::class);
+    ])->can('index', Organization::class);
 
     // UI
 
     Route::get('/create', [
         'as' => 'playground.crm.resource.organizations.create',
         'uses' => 'OrganizationController@create',
-    ])->can('create', Playground\Crm\Models\Organization::class);
+    ])->can('create', Organization::class);
 
     Route::get('/edit/{organization}', [
         'as' => 'playground.crm.resource.organizations.edit',
@@ -90,7 +91,7 @@ Route::group([
     Route::post('/', [
         'as' => 'playground.crm.resource.organizations.post',
         'uses' => 'OrganizationController@store',
-    ])->can('store', Playground\Crm\Models\Organization::class);
+    ])->can('store', Organization::class);
 
     // Route::put('/', [
     //     'as' => 'playground.crm.resource.organizations.put',

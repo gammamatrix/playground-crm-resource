@@ -12,11 +12,14 @@
     "folder": "contact",
     "model": "Contact",
     "model_column": "contact",
-    "model_label": "Contact",
+    "model_label": "",
+    "model_slug": "contact",
+    "model_variable": "",
+    "model_variable_plural": "",
     "type": "playground-resource",
     "route": "playground.crm.resource",
     "title": "Contact",
     "models": {
-        "Contact": "resources/configurations/playground-crm/model.contact.json"
+        "Contact": "resources/configurations/playground-crm/contact/model.json"
     }
 }

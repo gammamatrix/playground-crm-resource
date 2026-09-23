@@ -12,11 +12,14 @@
     "folder": "organization",
     "model": "Organization",
     "model_column": "organization",
-    "model_label": "Organization",
+    "model_label": "",
+    "model_slug": "organization",
+    "model_variable": "",
+    "model_variable_plural": "",
     "type": "playground-resource",
     "route": "playground.crm.resource",
     "title": "Organization",
     "models": {
-        "Organization": "resources/configurations/playground-crm/model.organization.json"
+        "Organization": "resources/configurations/playground-crm/organization/model.json"
     }
 }

@@ -23,6 +23,10 @@ class StoreRequest extends BaseStoreRequest
         'owned_by_id' => ['nullable', 'uuid'],
         'parent_id' => ['nullable', 'uuid'],
         'matrix_id' => ['nullable', 'uuid'],
+        'client_id' => ['nullable', 'uuid'],
+        'contact_id' => ['nullable', 'uuid'],
+        'location_id' => ['nullable', 'uuid'],
+        'organization_id' => ['nullable', 'uuid'],
         'canceled_at' => ['nullable', 'string'],
         'closed_at' => ['nullable', 'string'],
         'embargo_at' => ['nullable', 'string'],
@@ -32,8 +36,8 @@ class StoreRequest extends BaseStoreRequest
         'postponed_at' => ['nullable', 'string'],
         'published_at' => ['nullable', 'string'],
         'released_at' => ['nullable', 'string'],
-        'resumed_at' => ['nullable', 'string'],
         'resolved_at' => ['nullable', 'string'],
+        'resumed_at' => ['nullable', 'string'],
         'suspended_at' => ['nullable', 'string'],
         'timer_end_at' => ['nullable', 'string'],
         'timer_start_at' => ['nullable', 'string'],
@@ -91,6 +95,7 @@ class StoreRequest extends BaseStoreRequest
         'introduction' => ['string'],
         'content' => ['nullable', 'string'],
         'summary' => ['nullable', 'string'],
+        'email' => ['nullable', 'string'],
         'phone' => ['nullable', 'string'],
         'icon' => ['string'],
         'image' => ['string'],
@@ -105,7 +110,7 @@ class StoreRequest extends BaseStoreRequest
         '_return_url' => ['nullable', 'url'],
     ];
 
-    protected string $slug_table = 'crm_people';
+    protected string $slug_table = 'crm_peoples';
 
     /**
      * Prepare the data for validation.

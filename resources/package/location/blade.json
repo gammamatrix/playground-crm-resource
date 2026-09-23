@@ -12,11 +12,14 @@
     "folder": "location",
     "model": "Location",
     "model_column": "location",
-    "model_label": "Location",
+    "model_label": "",
+    "model_slug": "location",
+    "model_variable": "",
+    "model_variable_plural": "",
     "type": "playground-resource",
     "route": "playground.crm.resource",
     "title": "Location",
     "models": {
-        "Location": "resources/configurations/playground-crm/model.location.json"
+        "Location": "resources/configurations/playground-crm/location/model.json"
     }
 }

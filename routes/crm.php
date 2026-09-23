@@ -7,6 +7,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Playground\Crm\Models\Client;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,6 @@ Route::group([
     Route::get('/', [
         'as' => 'playground.crm.resource',
         'uses' => 'IndexController@index',
-    ])->can('index', Playground\Crm\Models\Client::class);
+    ])->can('index', Client::class);
 
 });

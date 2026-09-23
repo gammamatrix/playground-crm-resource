@@ -29,22 +29,24 @@ class PeopleController extends Controller
         'model_attribute' => 'title',
         'model_label' => 'People',
         'model_label_plural' => 'People',
-        'model_route' => 'playground.crm.resource.people',
+        'model_route' => 'playground.crm.resource.peoples',
         'model_slug' => 'people',
-        'model_slug_plural' => 'people',
+        'model_slug_plural' => 'peoples',
+        'model_variable' => 'people',
+        'model_variable_plural' => 'peoples',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMs',
         'module_route' => 'playground.crm.resource',
         'module_slug' => 'crm',
         'privilege' => 'playground-crm-resource:people',
-        'table' => 'crm_people',
+        'table' => 'crm_peoples',
         'view' => 'playground-crm-resource::people',
     ];
 
     /**
      * Create the People resource in storage.
      *
-     * @route GET /resource/crm/people/create playground.crm.resource.people.create
+     * @route GET /resource/crm/peoples/create playground.crm.resource.peoples.create
      */
     public function create(
         Requests\People\CreateRequest $request
@@ -99,7 +101,7 @@ class PeopleController extends Controller
     /**
      * Edit the People resource in storage.
      *
-     * @route GET /resource/crm/people/edit/{people} playground.crm.resource.people.edit
+     * @route GET /resource/crm/peoples/edit/{people} playground.crm.resource.peoples.edit
      */
     public function edit(
         People $people,
@@ -154,7 +156,7 @@ class PeopleController extends Controller
     /**
      * Remove the People resource from storage.
      *
-     * @route DELETE /resource/crm/people/{people} playground.crm.resource.people.destroy
+     * @route DELETE /resource/crm/peoples/{people} playground.crm.resource.peoples.destroy
      */
     public function destroy(
         People $people,
@@ -193,7 +195,7 @@ class PeopleController extends Controller
     /**
      * Lock the People resource in storage.
      *
-     * @route PUT /resource/crm/people/{people} playground.crm.resource.people.lock
+     * @route PUT /resource/crm/peoples/{people} playground.crm.resource.peoples.lock
      */
     public function lock(
         People $people,
@@ -235,7 +237,7 @@ class PeopleController extends Controller
     /**
      * Display a listing of People resources.
      *
-     * @route GET /resource/crm/people playground.crm.resource.people
+     * @route GET /resource/crm/peoples playground.crm.resource.peoples
      */
     public function index(
         Requests\People\IndexRequest $request
@@ -323,7 +325,7 @@ class PeopleController extends Controller
     /**
      * Restore the People resource from the trash.
      *
-     * @route PUT /resource/crm/people/restore/{people} playground.crm.resource.people.restore
+     * @route PUT /resource/crm/peoples/restore/{people} playground.crm.resource.peoples.restore
      */
     public function restore(
         People $people,
@@ -361,7 +363,7 @@ class PeopleController extends Controller
     /**
      * Display the People resource.
      *
-     * @route GET /resource/crm/people/{people} playground.crm.resource.people.show
+     * @route GET /resource/crm/peoples/{people} playground.crm.resource.peoples.show
      */
     public function show(
         People $people,
@@ -401,7 +403,7 @@ class PeopleController extends Controller
     /**
      * Store a newly created API People resource in storage.
      *
-     * @route POST /resource/crm/people playground.crm.resource.people.post
+     * @route POST /resource/crm/peoples playground.crm.resource.peoples.post
      */
     public function store(
         Requests\People\StoreRequest $request
@@ -440,7 +442,7 @@ class PeopleController extends Controller
     /**
      * Unlock the People resource in storage.
      *
-     * @route DELETE /resource/crm/people/lock/{people} playground.crm.resource.people.unlock
+     * @route DELETE /resource/crm/peoples/lock/{people} playground.crm.resource.peoples.unlock
      */
     public function unlock(
         People $people,
@@ -480,7 +482,7 @@ class PeopleController extends Controller
     /**
      * Update the People resource in storage.
      *
-     * @route PATCH /resource/crm/people/{people} playground.crm.resource.people.patch
+     * @route PATCH /resource/crm/peoples/{people} playground.crm.resource.peoples.patch
      */
     public function update(
         People $people,

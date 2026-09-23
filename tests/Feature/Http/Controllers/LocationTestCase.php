@@ -8,23 +8,40 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Playground\Crm\Models\Location;
+
 /**
  * \Tests\Feature\Playground\Crm\Resource\Http\Controllers\LocationTestCase
  */
-class LocationTestCase extends TestCase
+class LocationTestCase extends PlaygroundCase
 {
-    public string $fqdn = \Playground\Crm\Models\Location::class;
+    public string $fqdn = Location::class;
 
     /**
      * @var array<string, string>
      */
     public array $packageInfo = [
         'model_attribute' => 'title',
+        'model_camel' => 'location',
+        'model_camels' => 'locations',
+        'model_kebab' => 'location',
+        'model_kebabs' => 'locations',
+        'model_lower' => 'location',
+        'model_lowers' => 'locations',
         'model_label' => 'Location',
         'model_label_plural' => 'Locations',
+        'model_labels' => 'Locations',
         'model_route' => 'playground.crm.resource.locations',
         'model_slug' => 'location',
+        'model_slugs' => 'locations',
         'model_slug_plural' => 'locations',
+        'model_snake' => 'location',
+        'model_snakes' => 'locations',
+        'model_studly' => 'Location',
+        'model_studlies' => 'Locations',
+        'model_variable' => 'location',
+        'model_variables' => 'locations',
+        'model_variable_plural' => 'locations',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMS',
         'module_route' => 'playground.crm.resource',
@@ -45,6 +62,10 @@ class LocationTestCase extends TestCase
         'owned_by_id',
         'parent_id',
         'matrix_id',
+        'client_id',
+        'contact_id',
+        'organization_id',
+        'people_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -57,8 +78,8 @@ class LocationTestCase extends TestCase
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -116,6 +137,7 @@ class LocationTestCase extends TestCase
         'introduction',
         'content',
         'summary',
+        'email',
         'phone',
         'icon',
         'image',

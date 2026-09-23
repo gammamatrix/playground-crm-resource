@@ -8,23 +8,40 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Playground\Crm\Models\Organization;
+
 /**
  * \Tests\Feature\Playground\Crm\Resource\Http\Controllers\OrganizationTestCase
  */
-class OrganizationTestCase extends TestCase
+class OrganizationTestCase extends PlaygroundCase
 {
-    public string $fqdn = \Playground\Crm\Models\Organization::class;
+    public string $fqdn = Organization::class;
 
     /**
      * @var array<string, string>
      */
     public array $packageInfo = [
         'model_attribute' => 'title',
+        'model_camel' => 'organization',
+        'model_camels' => 'organizations',
+        'model_kebab' => 'organization',
+        'model_kebabs' => 'organizations',
+        'model_lower' => 'organization',
+        'model_lowers' => 'organizations',
         'model_label' => 'Organization',
         'model_label_plural' => 'Organizations',
+        'model_labels' => 'Organizations',
         'model_route' => 'playground.crm.resource.organizations',
         'model_slug' => 'organization',
+        'model_slugs' => 'organizations',
         'model_slug_plural' => 'organizations',
+        'model_snake' => 'organization',
+        'model_snakes' => 'organizations',
+        'model_studly' => 'Organization',
+        'model_studlies' => 'Organizations',
+        'model_variable' => 'organization',
+        'model_variables' => 'organizations',
+        'model_variable_plural' => 'organizations',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMS',
         'module_route' => 'playground.crm.resource',
@@ -45,6 +62,10 @@ class OrganizationTestCase extends TestCase
         'owned_by_id',
         'parent_id',
         'matrix_id',
+        'client_id',
+        'contact_id',
+        'location_id',
+        'people_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -57,8 +78,8 @@ class OrganizationTestCase extends TestCase
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -116,6 +137,7 @@ class OrganizationTestCase extends TestCase
         'introduction',
         'content',
         'summary',
+        'email',
         'phone',
         'icon',
         'image',

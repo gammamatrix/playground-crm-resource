@@ -3,7 +3,7 @@
     "config": "playground-crm-resource",
     "fqdn": "Playground/Crm/Resource/Http/Requests/Organization/Organization",
     "model": "Organization",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/Organization",
     "module": "CRM",
     "module_slug": "crm",
     "name": "Organization",

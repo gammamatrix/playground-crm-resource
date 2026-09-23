@@ -28,7 +28,7 @@
                             <div class="col-sm-6">
                                 <div class="card m-1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Clients</h5>
+                                        <h5 class="card-title">clients</h5>
                                         <h6
                                             class="card-subtitle mb-2 text-muted"
                                         >
@@ -39,7 +39,7 @@
                                             class="card-link"
                                             href="{{ route("playground.crm.resource.clients") }}"
                                         >
-                                            View Clients
+                                            View clients
                                         </a>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@
                             <div class="col-sm-6">
                                 <div class="card m-1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Contacts</h5>
+                                        <h5 class="card-title">contacts</h5>
                                         <h6
                                             class="card-subtitle mb-2 text-muted"
                                         >
@@ -58,7 +58,7 @@
                                             class="card-link"
                                             href="{{ route("playground.crm.resource.contacts") }}"
                                         >
-                                            View Contacts
+                                            View contacts
                                         </a>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                             <div class="col-sm-6">
                                 <div class="card m-1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Locations</h5>
+                                        <h5 class="card-title">locations</h5>
                                         <h6
                                             class="card-subtitle mb-2 text-muted"
                                         >
@@ -77,7 +77,7 @@
                                             class="card-link"
                                             href="{{ route("playground.crm.resource.locations") }}"
                                         >
-                                            View Locations
+                                            View locations
                                         </a>
                                     </div>
                                 </div>
@@ -86,7 +86,7 @@
                                 <div class="card m-1">
                                     <div class="card-body">
                                         <h5 class="card-title">
-                                            Organizations
+                                            organizations
                                         </h5>
                                         <h6
                                             class="card-subtitle mb-2 text-muted"
@@ -98,7 +98,7 @@
                                             class="card-link"
                                             href="{{ route("playground.crm.resource.organizations") }}"
                                         >
-                                            View Organizations
+                                            View organizations
                                         </a>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@
                             <div class="col-sm-6">
                                 <div class="card m-1">
                                     <div class="card-body">
-                                        <h5 class="card-title">People</h5>
+                                        <h5 class="card-title">people</h5>
                                         <h6
                                             class="card-subtitle mb-2 text-muted"
                                         >
@@ -115,9 +115,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.people") }}"
+                                            href="{{ route("playground.crm.resource.peoples") }}"
                                         >
-                                            View People
+                                            View people
                                         </a>
                                     </div>
                                 </div>

@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Crm\Resource\Http\Requests\Contact;
 
+use Playground\Crm\Resource\Http\Requests\Contact\UnlockRequest;
 use Tests\Unit\Playground\Crm\Resource\Http\Requests\RequestTestCase;
 
 /**
@@ -15,5 +16,5 @@ use Tests\Unit\Playground\Crm\Resource\Http\Requests\RequestTestCase;
  */
 class UnlockRequestTest extends RequestTestCase
 {
-    protected string $requestClass = \Playground\Crm\Resource\Http\Requests\Contact\UnlockRequest::class;
+    protected string $requestClass = UnlockRequest::class;
 }

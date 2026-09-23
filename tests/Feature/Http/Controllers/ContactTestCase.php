@@ -8,23 +8,40 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Playground\Crm\Models\Contact;
+
 /**
  * \Tests\Feature\Playground\Crm\Resource\Http\Controllers\ContactTestCase
  */
-class ContactTestCase extends TestCase
+class ContactTestCase extends PlaygroundCase
 {
-    public string $fqdn = \Playground\Crm\Models\Contact::class;
+    public string $fqdn = Contact::class;
 
     /**
      * @var array<string, string>
      */
     public array $packageInfo = [
         'model_attribute' => 'title',
+        'model_camel' => 'contact',
+        'model_camels' => 'contacts',
+        'model_kebab' => 'contact',
+        'model_kebabs' => 'contacts',
+        'model_lower' => 'contact',
+        'model_lowers' => 'contacts',
         'model_label' => 'Contact',
         'model_label_plural' => 'Contacts',
+        'model_labels' => 'Contacts',
         'model_route' => 'playground.crm.resource.contacts',
         'model_slug' => 'contact',
+        'model_slugs' => 'contacts',
         'model_slug_plural' => 'contacts',
+        'model_snake' => 'contact',
+        'model_snakes' => 'contacts',
+        'model_studly' => 'Contact',
+        'model_studlies' => 'Contacts',
+        'model_variable' => 'contact',
+        'model_variables' => 'contacts',
+        'model_variable_plural' => 'contacts',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMS',
         'module_route' => 'playground.crm.resource',
@@ -45,6 +62,10 @@ class ContactTestCase extends TestCase
         'owned_by_id',
         'parent_id',
         'matrix_id',
+        'client_id',
+        'location_id',
+        'organization_id',
+        'people_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -57,8 +78,8 @@ class ContactTestCase extends TestCase
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -116,6 +137,7 @@ class ContactTestCase extends TestCase
         'introduction',
         'content',
         'summary',
+        'email',
         'phone',
         'icon',
         'image',

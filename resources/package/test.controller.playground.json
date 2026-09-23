@@ -1,9 +1,9 @@
 {
-    "class": "IndexRouteTest",
+    "class": "PlaygroundCase",
     "config": "playground-crm-resource",
     "extends": "TestCase",
-    "fqdn": "Tests/Feature/Playground/Crm/Resource/IndexRouteTest",
-    "model": "Client",
+    "fqdn": "Tests/Feature/Playground/Crm/Resource/Http/Controllers/PlaygroundCase",
+    "model": "",
     "model_fqdn": "",
     "model_camel": "",
     "model_camels": "",
@@ -24,15 +24,15 @@
     "model_variables": "",
     "module": "CRM",
     "module_slug": "crm",
-    "name": "IndexRouteTest",
-    "namespace": "Tests/Feature/Playground/Crm/Resource",
+    "name": "PlaygroundTestCase",
+    "namespace": "Tests/Feature/Playground/Crm/Resource/Http/Controllers",
     "organization": "Playground",
     "package": "playground-crm-resource",
     "playground": true,
     "suite": "feature",
-    "type": "playground-resource-index",
+    "type": "playground-resource-controller-playground-case",
     "uses": [
-        "Tests/Feature/Playground/Crm/Resource/TestCase"
+        "Playground/Test/Feature/Http/Controllers/Resource"
     ],
     "models": [],
     "package_providers": []

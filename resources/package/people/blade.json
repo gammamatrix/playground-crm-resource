@@ -12,11 +12,14 @@
     "folder": "people",
     "model": "People",
     "model_column": "people",
-    "model_label": "People",
+    "model_label": "",
+    "model_slug": "people",
+    "model_variable": "",
+    "model_variable_plural": "",
     "type": "playground-resource",
     "route": "playground.crm.resource",
     "title": "People",
     "models": {
-        "People": "resources/configurations/playground-crm/model.people.json"
+        "People": "resources/configurations/playground-crm/people/model.json"
     }
 }

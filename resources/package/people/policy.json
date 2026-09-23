@@ -3,7 +3,7 @@
     "config": "playground-crm-resource",
     "fqdn": "Playground/Crm/Resource/Policies/People",
     "model": "People",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/People",
     "module": "CRM",
     "module_slug": "crm",
     "name": "People",

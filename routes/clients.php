@@ -7,6 +7,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Playground\Crm\Models\Client;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,19 +37,19 @@ Route::group([
     Route::get('/', [
         'as' => 'playground.crm.resource.clients',
         'uses' => 'ClientController@index',
-    ])->can('index', Playground\Crm\Models\Client::class);
+    ])->can('index', Client::class);
 
     Route::post('/index', [
         'as' => 'playground.crm.resource.clients.index',
         'uses' => 'ClientController@index',
-    ])->can('index', Playground\Crm\Models\Client::class);
+    ])->can('index', Client::class);
 
     // UI
 
     Route::get('/create', [
         'as' => 'playground.crm.resource.clients.create',
         'uses' => 'ClientController@create',
-    ])->can('create', Playground\Crm\Models\Client::class);
+    ])->can('create', Client::class);
 
     Route::get('/edit/{client}', [
         'as' => 'playground.crm.resource.clients.edit',
@@ -90,7 +91,7 @@ Route::group([
     Route::post('/', [
         'as' => 'playground.crm.resource.clients.post',
         'uses' => 'ClientController@store',
-    ])->can('store', Playground\Crm\Models\Client::class);
+    ])->can('store', Client::class);
 
     // Route::put('/', [
     //     'as' => 'playground.crm.resource.clients.put',

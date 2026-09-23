@@ -8,29 +8,46 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Playground\Crm\Models\People;
+
 /**
  * \Tests\Feature\Playground\Crm\Resource\Http\Controllers\PeopleTestCase
  */
-class PeopleTestCase extends TestCase
+class PeopleTestCase extends PlaygroundCase
 {
-    public string $fqdn = \Playground\Crm\Models\People::class;
+    public string $fqdn = People::class;
 
     /**
      * @var array<string, string>
      */
     public array $packageInfo = [
         'model_attribute' => 'title',
+        'model_camel' => 'people',
+        'model_camels' => 'peoples',
+        'model_kebab' => 'people',
+        'model_kebabs' => 'peoples',
+        'model_lower' => 'people',
+        'model_lowers' => 'people',
         'model_label' => 'People',
         'model_label_plural' => 'People',
-        'model_route' => 'playground.crm.resource.people',
+        'model_labels' => 'People',
+        'model_route' => 'playground.crm.resource.peoples',
         'model_slug' => 'people',
-        'model_slug_plural' => 'people',
+        'model_slugs' => 'peoples',
+        'model_slug_plural' => 'peoples',
+        'model_snake' => 'people',
+        'model_snakes' => 'peoples',
+        'model_studly' => 'People',
+        'model_studlies' => 'Peoples',
+        'model_variable' => 'people',
+        'model_variables' => 'peoples',
+        'model_variable_plural' => 'peoples',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMS',
         'module_route' => 'playground.crm.resource',
         'module_slug' => 'crm',
         'privilege' => 'playground-crm-resource:people',
-        'table' => 'crm_people',
+        'table' => 'crm_peoples',
         'view' => 'playground.crm.resource::people',
     ];
 
@@ -45,6 +62,10 @@ class PeopleTestCase extends TestCase
         'owned_by_id',
         'parent_id',
         'matrix_id',
+        'client_id',
+        'contact_id',
+        'location_id',
+        'organization_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -57,8 +78,8 @@ class PeopleTestCase extends TestCase
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -116,6 +137,7 @@ class PeopleTestCase extends TestCase
         'introduction',
         'content',
         'summary',
+        'email',
         'phone',
         'icon',
         'image',

@@ -7,6 +7,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Playground\Crm\Models\Location;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,19 +37,19 @@ Route::group([
     Route::get('/', [
         'as' => 'playground.crm.resource.locations',
         'uses' => 'LocationController@index',
-    ])->can('index', Playground\Crm\Models\Location::class);
+    ])->can('index', Location::class);
 
     Route::post('/index', [
         'as' => 'playground.crm.resource.locations.index',
         'uses' => 'LocationController@index',
-    ])->can('index', Playground\Crm\Models\Location::class);
+    ])->can('index', Location::class);
 
     // UI
 
     Route::get('/create', [
         'as' => 'playground.crm.resource.locations.create',
         'uses' => 'LocationController@create',
-    ])->can('create', Playground\Crm\Models\Location::class);
+    ])->can('create', Location::class);
 
     Route::get('/edit/{location}', [
         'as' => 'playground.crm.resource.locations.edit',
@@ -90,7 +91,7 @@ Route::group([
     Route::post('/', [
         'as' => 'playground.crm.resource.locations.post',
         'uses' => 'LocationController@store',
-    ])->can('store', Playground\Crm\Models\Location::class);
+    ])->can('store', Location::class);
 
     // Route::put('/', [
     //     'as' => 'playground.crm.resource.locations.put',

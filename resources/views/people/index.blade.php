@@ -23,15 +23,15 @@ $columnsViewable = [
     ],
     "created_by_id" => [
         "hide-sm" => true,
-        "label" => "Created by id",
+        "label" => "Created by ID",
     ],
     "modified_by_id" => [
         "hide-sm" => true,
-        "label" => "Modified by id",
+        "label" => "Modified by ID",
     ],
     "owned_by_id" => [
         "hide-sm" => true,
-        "label" => "Owned by id",
+        "label" => "Owned by ID",
     ],
     "parent_id" => [
         "hide-sm" => true,
@@ -40,6 +40,22 @@ $columnsViewable = [
     "matrix_id" => [
         "hide-sm" => true,
         "label" => "Matrix id",
+    ],
+    "client_id" => [
+        "hide-sm" => true,
+        "label" => "Client id",
+    ],
+    "contact_id" => [
+        "hide-sm" => true,
+        "label" => "Contact id",
+    ],
+    "location_id" => [
+        "hide-sm" => true,
+        "label" => "Location id",
+    ],
+    "organization_id" => [
+        "hide-sm" => true,
+        "label" => "Organization id",
     ],
     "locale" => [
         "hide-sm" => true,
@@ -88,6 +104,12 @@ $columnsViewable = [
         "linkType" => null,
         "linkRoute" => null,
         "label" => "Introduction",
+    ],
+    "email" => [
+        "hide-sm" => true,
+        "linkType" => null,
+        "linkRoute" => null,
+        "label" => "Email",
     ],
     "phone" => [
         "hide-sm" => true,
@@ -147,13 +169,13 @@ $columnsViewable = [
         "hide-sm" => true,
         "flag" => true,
         "label" => "Featured",
-        "onTrueClass" => "fa-solid fa-star",
+        "onTrueClass" => "fa-solid fa-star text-primary",
     ],
     "fixed" => [
         "hide-sm" => true,
         "flag" => true,
         "label" => "Fixed",
-        "onTrueClass" => "fa-solid fa-wrench",
+        "onTrueClass" => "fa-solid fa-wrench text-success",
     ],
     "flagged" => [
         "hide-sm" => true,
@@ -224,7 +246,7 @@ $columnsViewable = [
     "sms" => [
         "hide-sm" => true,
         "flag" => true,
-        "label" => "Sms",
+        "label" => "SMS",
         "onTrueClass" => "fa-solid fa-comment-sms",
     ],
     "suspended" => [
@@ -283,13 +305,13 @@ $columnsViewable = [
         "hide-sm" => true,
         "label" => "Released at",
     ],
-    "resumed_at" => [
-        "hide-sm" => true,
-        "label" => "Resumed at",
-    ],
     "resolved_at" => [
         "hide-sm" => true,
         "label" => "Resolved at",
+    ],
+    "resumed_at" => [
+        "hide-sm" => true,
+        "label" => "Resumed at",
     ],
     "suspended_at" => [
         "hide-sm" => true,

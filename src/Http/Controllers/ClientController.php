@@ -32,6 +32,8 @@ class ClientController extends Controller
         'model_route' => 'playground.crm.resource.clients',
         'model_slug' => 'client',
         'model_slug_plural' => 'clients',
+        'model_variable' => 'client',
+        'model_variable_plural' => 'clients',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMs',
         'module_route' => 'playground.crm.resource',

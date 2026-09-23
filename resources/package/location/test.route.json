@@ -1,10 +1,27 @@
 {
     "class": "LocationRouteTest",
     "config": "playground-crm-resource",
-    "extends": "",
+    "extends": "PlaygroundCase",
     "fqdn": "Tests/Feature/Playground/Crm/Resource/LocationRouteTest",
     "model": "Location",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/Location",
+    "model_camel": "location",
+    "model_camels": "locations",
+    "model_label": "Location",
+    "model_labels": "Locations",
+    "model_lower": "location",
+    "model_lowers": "locations",
+    "model_kebab": "location",
+    "model_kebabs": "locations",
+    "model_slug": "location",
+    "model_slugs": "locations",
+    "model_snake": "location",
+    "model_snakes": "locations",
+    "model_studly": "Location",
+    "model_studlies": "Locations",
+    "model_variable": "location",
+    "model_variable_plural": "locations",
+    "model_variables": "locations",
     "module": "CRM",
     "module_slug": "crm",
     "name": "LocationRouteTest",
@@ -16,7 +33,7 @@
     "type": "playground-resource-controller-model-user",
     "uses": [],
     "models": {
-        "Location": "resources/configurations/playground-crm/model.location.json"
+        "Location": "resources/configurations/playground-crm/location/model.json"
     },
     "package_providers": []
 }

@@ -1,10 +1,27 @@
 {
     "class": "ClientRouteTest",
     "config": "playground-crm-resource",
-    "extends": "",
+    "extends": "PlaygroundCase",
     "fqdn": "Tests/Feature/Playground/Crm/Resource/ClientRouteTest",
     "model": "Client",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/Client",
+    "model_camel": "client",
+    "model_camels": "clients",
+    "model_label": "Client",
+    "model_labels": "Clients",
+    "model_lower": "client",
+    "model_lowers": "clients",
+    "model_kebab": "client",
+    "model_kebabs": "clients",
+    "model_slug": "client",
+    "model_slugs": "clients",
+    "model_snake": "client",
+    "model_snakes": "clients",
+    "model_studly": "Client",
+    "model_studlies": "Clients",
+    "model_variable": "client",
+    "model_variable_plural": "clients",
+    "model_variables": "clients",
     "module": "CRM",
     "module_slug": "crm",
     "name": "ClientRouteTest",
@@ -16,7 +33,7 @@
     "type": "playground-resource-controller-model-user",
     "uses": [],
     "models": {
-        "Client": "resources/configurations/playground-crm/model.client.json"
+        "Client": "resources/configurations/playground-crm/client/model.json"
     },
     "package_providers": []
 }

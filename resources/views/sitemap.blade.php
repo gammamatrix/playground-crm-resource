@@ -100,7 +100,7 @@ if (
 
                         @if ($viewPeople)
                             <a
-                                href="{{ route("playground.crm.resource.people") }}"
+                                href="{{ route("playground.crm.resource.peoples") }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 People

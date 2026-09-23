@@ -1,10 +1,27 @@
 {
     "class": "OrganizationRouteTest",
     "config": "playground-crm-resource",
-    "extends": "",
+    "extends": "PlaygroundCase",
     "fqdn": "Tests/Feature/Playground/Crm/Resource/OrganizationRouteTest",
     "model": "Organization",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/Organization",
+    "model_camel": "organization",
+    "model_camels": "organizations",
+    "model_label": "Organization",
+    "model_labels": "Organizations",
+    "model_lower": "organization",
+    "model_lowers": "organizations",
+    "model_kebab": "organization",
+    "model_kebabs": "organizations",
+    "model_slug": "organization",
+    "model_slugs": "organizations",
+    "model_snake": "organization",
+    "model_snakes": "organizations",
+    "model_studly": "Organization",
+    "model_studlies": "Organizations",
+    "model_variable": "organization",
+    "model_variable_plural": "organizations",
+    "model_variables": "organizations",
     "module": "CRM",
     "module_slug": "crm",
     "name": "OrganizationRouteTest",
@@ -16,7 +33,7 @@
     "type": "playground-resource-controller-model-user",
     "uses": [],
     "models": {
-        "Organization": "resources/configurations/playground-crm/model.organization.json"
+        "Organization": "resources/configurations/playground-crm/organization/model.json"
     },
     "package_providers": []
 }

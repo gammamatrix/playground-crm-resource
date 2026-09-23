@@ -8,17 +8,19 @@ declare(strict_types=1);
 
 namespace Playground\Crm\Resource;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
+use Playground\Auth\Policies\Policy;
 
 /**
  * \Playground\Crm\Resource\ServiceProvider
  */
 class ServiceProvider extends AuthServiceProvider
 {
-    public const string VERSION = '74.0.0';
+    public const string VERSION = '75.0.0';
 
     public string $package = 'playground-crm-resource';
 
@@ -44,8 +46,8 @@ class ServiceProvider extends AuthServiceProvider
          *            guest: string|string[]
          *        },
          *        policies: array<
-         *            class-string<\Illuminate\Database\Eloquent\Model>,
-         *            class-string<\Playground\Auth\Policies\Policy>
+         *            class-string<Model>,
+         *            class-string<Policy>
          *        >,
          *        routes: array{
          *             crm: bool,
@@ -53,7 +55,7 @@ class ServiceProvider extends AuthServiceProvider
          *             contacts: bool,
          *             locations: bool,
          *             organizations: bool,
-         *             people: bool,
+         *             peoples: bool,
          *        },
          *        blade: string,
          *        abilities: array<string, string[]>,
@@ -179,8 +181,8 @@ class ServiceProvider extends AuthServiceProvider
         if (! empty($config['organizations'])) {
             $this->loadRoutesFrom(dirname(__DIR__).'/routes/organizations.php');
         }
-        if (! empty($config['people'])) {
-            $this->loadRoutesFrom(dirname(__DIR__).'/routes/people.php');
+        if (! empty($config['peoples'])) {
+            $this->loadRoutesFrom(dirname(__DIR__).'/routes/peoples.php');
         }
     }
 
@@ -220,7 +222,7 @@ class ServiceProvider extends AuthServiceProvider
             '<fg=red;options=bold>Route</> contacts' => ! empty($routes['contacts']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             '<fg=red;options=bold>Route</> locations' => ! empty($routes['locations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             '<fg=red;options=bold>Route</> organizations' => ! empty($routes['organizations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
-            '<fg=red;options=bold>Route</> people' => ! empty($routes['people']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
+            '<fg=red;options=bold>Route</> peoples' => ! empty($routes['peoples']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
 
             'Package' => $this->package,
             'Version' => ServiceProvider::VERSION,

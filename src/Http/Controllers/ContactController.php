@@ -32,6 +32,8 @@ class ContactController extends Controller
         'model_route' => 'playground.crm.resource.contacts',
         'model_slug' => 'contact',
         'model_slug_plural' => 'contacts',
+        'model_variable' => 'contact',
+        'model_variable_plural' => 'contacts',
         'module_label' => 'CRM',
         'module_label_plural' => 'CRMs',
         'module_route' => 'playground.crm.resource',

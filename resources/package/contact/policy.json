@@ -3,7 +3,7 @@
     "config": "playground-crm-resource",
     "fqdn": "Playground/Crm/Resource/Policies/Contact",
     "model": "Contact",
-    "model_fqdn": "",
+    "model_fqdn": "Playground/Crm/Models/Contact",
     "module": "CRM",
     "module_slug": "crm",
     "name": "Contact",

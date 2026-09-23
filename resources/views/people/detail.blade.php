@@ -15,10 +15,10 @@ if (
 }
 
 $routePatch = route(sprintf('%1$s.patch', $packageInfo->model_route()), [
-    $packageInfo->model_slug() => $data->getAttributeValue("id"),
+    $packageInfo->model_variable() => $data->getAttributeValue("id"),
 ]);
 $routeShow = route(sprintf('%1$s.show', $packageInfo->model_route()), [
-    $packageInfo->model_slug() => $data->getAttributeValue("id"),
+    $packageInfo->model_variable() => $data->getAttributeValue("id"),
 ]);
 
 $flags = [
@@ -61,13 +61,13 @@ $flags = [
     "featured" => [
         "column" => "featured",
         "label" => "Featured",
-        "icon" => "fa-solid fa-star",
+        "icon" => "fa-solid fa-star text-primary",
         "badge" => "",
     ],
     "fixed" => [
         "column" => "fixed",
         "label" => "Fixed",
-        "icon" => "fa-solid fa-wrench",
+        "icon" => "fa-solid fa-wrench text-success",
         "badge" => "",
     ],
     "flagged" => [
@@ -138,7 +138,7 @@ $flags = [
     ],
     "sms" => [
         "column" => "sms",
-        "label" => "Sms",
+        "label" => "SMS",
         "icon" => "fa-solid fa-comment-sms",
         "badge" => "",
     ],
@@ -182,8 +182,10 @@ $flags = [
         <div class="col-sm-6 col-md-4 mb-3">
             @include("playground-crm-resource::io/manage-parent")
         </div>
-        <div class="col-sm-6 col-md-4 mb-3">
-            @include("playground-crm-resource::io/manage-matrix")
-        </div>
+        @if (config("playground-cms-resource.matrix.enabled"))
+            <div class="col-sm-6 col-md-4 mb-3">
+                @include("playground-crm-resource::io/manage-matrix")
+            </div>
+        @endif
     </div>
 @endsection

@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Crm\Resource\Http\Requests\People;
 
+use Playground\Crm\Resource\Http\Requests\People\IndexRequest;
 use Tests\Unit\Playground\Crm\Resource\Http\Requests\RequestTestCase;
 
 /**
@@ -15,5 +16,5 @@ use Tests\Unit\Playground\Crm\Resource\Http\Requests\RequestTestCase;
  */
 class IndexRequestTest extends RequestTestCase
 {
-    protected string $requestClass = \Playground\Crm\Resource\Http\Requests\People\IndexRequest::class;
+    protected string $requestClass = IndexRequest::class;
 }
