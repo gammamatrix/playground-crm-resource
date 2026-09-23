@@ -73,20 +73,10 @@
         "gammamatrix/playground-site-blade": "*"
     },
     "package_suggest": [],
-    "controllers": [
-        "resources/package/controller.base.json",
-        "resources/package/index/controller.json",
-        "resources/package/client/controller.json",
-        "resources/package/contact/controller.json",
-        "resources/package/location/controller.json",
-        "resources/package/organization/controller.json",
-        "resources/package/people/controller.json"
-    ],
+    "controllers": [],
     "models": [],
     "policies": [],
-    "requests": [
-        "resources/package/form.request.json"
-    ],
+    "requests": [],
     "routes": {
         "crm": "",
         "clients": "",
