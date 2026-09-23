@@ -29,7 +29,7 @@ $viewOrganizations = \Playground\Auth\Facades\Can::access($user, [
     "roles" => ["admin", "manager", "publisher"],
 ])->allowed();
 
-$viewPeople = \Playground\Auth\Facades\Can::access($user, [
+$viewPeoples = \Playground\Auth\Facades\Can::access($user, [
     "allow" => false,
     "any" => true,
     "privilege" => "playground-crm-resource:people:viewAny",
@@ -41,7 +41,7 @@ if (
     ! $viewContacts &&
     ! $viewLocations &&
     ! $viewOrganizations &&
-    ! $viewPeople
+    ! $viewPeoples
 ) {
     return;
 }
@@ -98,7 +98,7 @@ if (
                             </a>
                         @endif
 
-                        @if ($viewPeople)
+                        @if ($viewPeoples)
                             <a
                                 href="{{ route("playground.crm.resource.peoples") }}"
                                 class="list-group-item list-group-item-action"

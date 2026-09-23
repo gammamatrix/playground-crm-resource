@@ -63,14 +63,12 @@
     "package_require": {
         "php": "^8.4",
         "gammamatrix/playground": "*",
-        "illuminate/support": "^13.0",
         "gammamatrix/playground-auth": "*",
         "gammamatrix/playground-http": "*",
         "gammamatrix/playground-crm": "*"
     },
     "package_require_dev": {
         "gammamatrix/playground-test": "*",
-        "illuminate/testing": "^13.0",
         "gammamatrix/playground-login-blade": "*",
         "gammamatrix/playground-site-blade": "*"
     },
