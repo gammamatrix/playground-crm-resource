@@ -1,8 +1,8 @@
-@extends("playground::layouts.resource.layout")
+@extends ("playground::layouts.resource.layout")
 
-@section("title", "CRM")
+@section ("title", "CRM")
 
-@section("breadcrumbs")
+@section ("breadcrumbs")
     <div class="container-fluid mt-3">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -15,7 +15,7 @@
     </div>
 @endsection
 
-@section("content")
+@section ("content")
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-12">
@@ -37,10 +37,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.clients") }}"
+                                            href="{{ route('playground.crm.resource.clients') }}"
+                                            >View Clients</a
                                         >
-                                            View Clients
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -56,10 +55,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.contacts") }}"
+                                            href="{{ route('playground.crm.resource.contacts') }}"
+                                            >View Contacts</a
                                         >
-                                            View Contacts
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -75,10 +73,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.locations") }}"
+                                            href="{{ route('playground.crm.resource.locations') }}"
+                                            >View Locations</a
                                         >
-                                            View Locations
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -96,10 +93,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.organizations") }}"
+                                            href="{{ route('playground.crm.resource.organizations') }}"
+                                            >View Organizations</a
                                         >
-                                            View Organizations
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -115,10 +111,9 @@
                                         <p class="card-text"></p>
                                         <a
                                             class="card-link"
-                                            href="{{ route("playground.crm.resource.peoples") }}"
+                                            href="{{ route('playground.crm.resource.peoples') }}"
+                                            >View People</a
                                         >
-                                            View People
-                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@
     "model": "People",
     "model_fqdn": "",
     "model_column": "",
-    "model_label": "",
+    "model_label": "People",
     "model_slug_plural": "",
     "module": "CRM",
     "module_slug": "crm",

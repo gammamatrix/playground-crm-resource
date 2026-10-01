@@ -9,9 +9,7 @@
         @endphp
 
         @if ($owner)
-            <div class="card-body">
-                {{ $owner->name }}
-            </div>
+            <div class="card-body">{{ $owner->name }}</div>
         @endif
     @elseif (! $data->locked && $routePatch)
         @php
@@ -26,7 +24,7 @@
                 class="needs-validation"
             >
                 @csrf
-                @method("patch")
+                @method ("patch")
                 <div
                     class="btn-toolbar mb-3"
                     role="toolbar"

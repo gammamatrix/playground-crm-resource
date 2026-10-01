@@ -5,7 +5,7 @@
     "model": "Organization",
     "model_fqdn": "",
     "model_column": "",
-    "model_label": "",
+    "model_label": "Organization",
     "model_slug_plural": "",
     "module": "CRM",
     "module_slug": "crm",

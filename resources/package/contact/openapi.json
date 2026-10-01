@@ -5,7 +5,7 @@
     "model": "Contact",
     "model_fqdn": "",
     "model_column": "",
-    "model_label": "",
+    "model_label": "Contact",
     "model_slug_plural": "",
     "module": "CRM",
     "module_slug": "crm",

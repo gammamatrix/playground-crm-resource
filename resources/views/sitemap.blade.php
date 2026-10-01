@@ -2,51 +2,45 @@
 $user = \Illuminate\Support\Facades\Auth::user();
 
 $viewClients = \Playground\Auth\Facades\Can::access($user, [
-    "allow" => false,
-    "any" => true,
-    "privilege" => "playground-crm-resource:client:viewAny",
-    "roles" => ["admin", "manager", "publisher"],
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:client:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
 $viewContacts = \Playground\Auth\Facades\Can::access($user, [
-    "allow" => false,
-    "any" => true,
-    "privilege" => "playground-crm-resource:contact:viewAny",
-    "roles" => ["admin", "manager", "publisher"],
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:contact:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
 $viewLocations = \Playground\Auth\Facades\Can::access($user, [
-    "allow" => false,
-    "any" => true,
-    "privilege" => "playground-crm-resource:location:viewAny",
-    "roles" => ["admin", "manager", "publisher"],
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:location:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
 $viewOrganizations = \Playground\Auth\Facades\Can::access($user, [
-    "allow" => false,
-    "any" => true,
-    "privilege" => "playground-crm-resource:organization:viewAny",
-    "roles" => ["admin", "manager", "publisher"],
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:organization:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
 $viewPeoples = \Playground\Auth\Facades\Can::access($user, [
-    "allow" => false,
-    "any" => true,
-    "privilege" => "playground-crm-resource:people:viewAny",
-    "roles" => ["admin", "manager", "publisher"],
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:people:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
-if (
-    ! $viewClients &&
-    ! $viewContacts &&
-    ! $viewLocations &&
-    ! $viewOrganizations &&
-    ! $viewPeoples
-) {
+
+if (!$viewClients && !$viewContacts && !$viewLocations && !$viewOrganizations && !$viewPeoples) {
     return;
 }
 ?>
-
 <div class="card my-1">
     <div class="card-body">
         <h2>CRM</h2>
@@ -56,15 +50,15 @@ if (
                 <div class="card">
                     <div class="card-header">
                         Client Relationship Management System
-                        <small class="text-muted">
-                            clients, contacts, locations, organizations and
-                            people
-                        </small>
+                        <small class="text-muted"
+                            >clients, contacts, locations, organizations and
+                            people</small
+                        >
                     </div>
                     <ul class="list-group list-group-flush">
                         @if ($viewClients)
                             <a
-                                href="{{ route("playground.crm.resource.clients") }}"
+                                href="{{ route('playground.crm.resource.clients') }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 Clients
@@ -73,7 +67,7 @@ if (
 
                         @if ($viewContacts)
                             <a
-                                href="{{ route("playground.crm.resource.contacts") }}"
+                                href="{{ route('playground.crm.resource.contacts') }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 Contacts
@@ -82,7 +76,7 @@ if (
 
                         @if ($viewLocations)
                             <a
-                                href="{{ route("playground.crm.resource.locations") }}"
+                                href="{{ route('playground.crm.resource.locations') }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 Locations
@@ -91,7 +85,7 @@ if (
 
                         @if ($viewOrganizations)
                             <a
-                                href="{{ route("playground.crm.resource.organizations") }}"
+                                href="{{ route('playground.crm.resource.organizations') }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 Organizations
@@ -100,7 +94,7 @@ if (
 
                         @if ($viewPeoples)
                             <a
-                                href="{{ route("playground.crm.resource.peoples") }}"
+                                href="{{ route('playground.crm.resource.peoples') }}"
                                 class="list-group-item list-group-item-action"
                             >
                                 People

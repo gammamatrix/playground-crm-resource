@@ -34,6 +34,7 @@
     "slug": "contact",
     "slug_plural": "contacts",
     "model_route": "playground.crm.resource.contacts",
+    "model_route_param": "contact",
     "module_route": "playground.crm.resource",
     "model_camel": "contact",
     "model_camels": "contacts",

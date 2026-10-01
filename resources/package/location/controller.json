@@ -34,6 +34,7 @@
     "slug": "location",
     "slug_plural": "locations",
     "model_route": "playground.crm.resource.locations",
+    "model_route_param": "location",
     "module_route": "playground.crm.resource",
     "model_camel": "location",
     "model_camels": "locations",

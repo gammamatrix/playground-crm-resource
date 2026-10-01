@@ -1,8 +1,8 @@
 {
     "class": "Controller",
     "module": "CRM",
-    "module_label": "",
-    "module_labels": "",
+    "module_label": "CRM",
+    "module_labels": "CRMs",
     "module_slug": "crm",
     "module_slugs": "crms",
     "name": "Controller",
@@ -32,6 +32,7 @@
     "slug": "",
     "slug_plural": "",
     "model_route": "",
+    "model_route_param": "",
     "module_route": "playground.crm.resource",
     "model_camel": "",
     "model_camels": "",

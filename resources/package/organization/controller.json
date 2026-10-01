@@ -34,6 +34,7 @@
     "slug": "organization",
     "slug_plural": "organizations",
     "model_route": "playground.crm.resource.organizations",
+    "model_route_param": "organization",
     "module_route": "playground.crm.resource",
     "model_camel": "organization",
     "model_camels": "organizations",

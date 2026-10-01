@@ -1,11 +1,7 @@
-@extends(
-    "playground::layouts.resource.form",
-    [
-        "withFormInfo" => "playground-crm-resource::people/form-info",
+@extends ("playground::layouts.resource.form", [
+    "withFormInfo" => "playground-crm-resource::people/form-info",
         "withFormAccess" => true,
-    ]
-)
+])
 
-@section("fieldset-content")
-    
+@section ("fieldset-content")
 @endsection
