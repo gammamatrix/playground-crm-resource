@@ -15,10 +15,10 @@ if (
 }
 
 $routePatch = route(sprintf('%1$s.patch', $packageInfo->model_route()), [
-    $packageInfo->model_variable() => $data->getAttributeValue("id"),
+    $packageInfo->model_route_param() => $data->getAttributeValue("id"),
 ]);
 $routeShow = route(sprintf('%1$s.show', $packageInfo->model_route()), [
-    $packageInfo->model_variable() => $data->getAttributeValue("id"),
+    $packageInfo->model_route_param() => $data->getAttributeValue("id"),
 ]);
 
 $flags = [
