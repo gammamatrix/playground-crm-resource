@@ -57,7 +57,7 @@
     "uses": [],
     "packageInfo": {
         "model_attribute_required": true,
-        "model_attribute": "",
+        "model_attribute": "title",
         "model_camel": "client",
         "model_camels": "clients",
         "model_kebab": "client",
@@ -84,7 +84,7 @@
         "module_slug": "crm",
         "module_slugs": "crms",
         "privilege": "playground-crm-resource",
-        "table": "",
+        "table": "crm_clients",
         "view": "playground-crm-resource"
     }
 }

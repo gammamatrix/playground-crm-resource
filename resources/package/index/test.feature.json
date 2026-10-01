@@ -3,7 +3,7 @@
     "config": "playground-crm-resource",
     "extends": "TestCase",
     "fqdn": "Tests/Feature/Playground/Crm/Resource/IndexRouteTest",
-    "model": "",
+    "model": "Client",
     "model_fqdn": "",
     "model_camel": "",
     "model_camels": "",
