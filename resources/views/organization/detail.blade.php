@@ -72,7 +72,7 @@ $flags = [
         <div class="col-sm-6 col-md-4 mb-3">
             @include ("playground-crm-resource::io/manage-parent")
         </div>
-        @if (config("playground-cms-resource.matrix.enabled"))
+        @if (config("playground-crm-resource.matrix.enabled"))
             <div class="col-sm-6 col-md-4 mb-3">
                 @include ("playground-crm-resource::io/manage-matrix")
             </div>
