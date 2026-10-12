@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2026-10-11 00:51:27</timestamp>
+  <timestamp>2026-10-12 21:07:31</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>85</methodCount>
+    <methodCount>70</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>323</totalCrap>
+    <totalCrap>270</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -474,116 +474,6 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>create</methodName>
-      <methodSignature>create(Requests\People\CreateRequest $request): JsonResponse|View|Resources\People</methodSignature>
-      <fullMethod>create(Requests\People\CreateRequest $request): JsonResponse|View|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>edit</methodName>
-      <methodSignature>edit(People $people, Requests\People\EditRequest $request): JsonResponse|View|Resources\People</methodSignature>
-      <fullMethod>edit(People $people, Requests\People\EditRequest $request): JsonResponse|View|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>destroy</methodName>
-      <methodSignature>destroy(People $people, Requests\People\DestroyRequest $request): Response|RedirectResponse</methodSignature>
-      <fullMethod>destroy(People $people, Requests\People\DestroyRequest $request): Response|RedirectResponse</fullMethod>
-      <crap>6</crap>
-      <complexity>6</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>lock</methodName>
-      <methodSignature>lock(People $people, Requests\People\LockRequest $request): JsonResponse|RedirectResponse|Resources\People</methodSignature>
-      <fullMethod>lock(People $people, Requests\People\LockRequest $request): JsonResponse|RedirectResponse|Resources\People</fullMethod>
-      <crap>5</crap>
-      <complexity>5</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>index</methodName>
-      <methodSignature>index(Requests\People\IndexRequest $request): JsonResponse|View|Resources\PeopleCollection</methodSignature>
-      <fullMethod>index(Requests\People\IndexRequest $request): JsonResponse|View|Resources\PeopleCollection</fullMethod>
-      <crap>6</crap>
-      <complexity>6</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>restore</methodName>
-      <methodSignature>restore(People $people, Requests\People\RestoreRequest $request): JsonResponse|RedirectResponse|Resources\People</methodSignature>
-      <fullMethod>restore(People $people, Requests\People\RestoreRequest $request): JsonResponse|RedirectResponse|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>show</methodName>
-      <methodSignature>show(People $people, Requests\People\ShowRequest $request): JsonResponse|View|Resources\People</methodSignature>
-      <fullMethod>show(People $people, Requests\People\ShowRequest $request): JsonResponse|View|Resources\People</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>store</methodName>
-      <methodSignature>store(Requests\People\StoreRequest $request): Response|JsonResponse|RedirectResponse|Resources\People</methodSignature>
-      <fullMethod>store(Requests\People\StoreRequest $request): Response|JsonResponse|RedirectResponse|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>unlock</methodName>
-      <methodSignature>unlock(People $people, Requests\People\UnlockRequest $request): JsonResponse|RedirectResponse|Resources\People</methodSignature>
-      <fullMethod>unlock(People $people, Requests\People\UnlockRequest $request): JsonResponse|RedirectResponse|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Controllers</package>
-      <className>Playground\Crm\Resource\Http\Controllers\PeopleController</className>
-      <methodName>update</methodName>
-      <methodSignature>update(People $people, Requests\People\UpdateRequest $request): JsonResponse|RedirectResponse|Resources\People</methodSignature>
-      <fullMethod>update(People $people, Requests\People\UpdateRequest $request): JsonResponse|RedirectResponse|Resources\People</fullMethod>
-      <crap>4</crap>
-      <complexity>4</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
       <package>Playground\Crm\Resource\Http\Requests\Client</package>
       <className>Playground\Crm\Resource\Http\Requests\Client\DestroyRequest</className>
       <methodName>rules</methodName>
@@ -749,39 +639,6 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Crm\Resource\Http\Requests\People</package>
-      <className>Playground\Crm\Resource\Http\Requests\People\DestroyRequest</className>
-      <methodName>rules</methodName>
-      <methodSignature>rules(): array</methodSignature>
-      <fullMethod>rules(): array</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Requests\People</package>
-      <className>Playground\Crm\Resource\Http\Requests\People\StoreRequest</className>
-      <methodName>prepareForValidation</methodName>
-      <methodSignature>prepareForValidation()</methodSignature>
-      <fullMethod>prepareForValidation()</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Requests\People</package>
-      <className>Playground\Crm\Resource\Http\Requests\People\UpdateRequest</className>
-      <methodName>prepareForValidation</methodName>
-      <methodSignature>prepareForValidation()</methodSignature>
-      <fullMethod>prepareForValidation()</fullMethod>
-      <crap>2</crap>
-      <complexity>2</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
       <package>Playground\Crm\Resource\Http\Resources</package>
       <className>Playground\Crm\Resource\Http\Resources\Client</className>
       <methodName>with</methodName>
@@ -870,28 +727,6 @@
       <crapLoad>0</crapLoad>
     </method>
     <method>
-      <package>Playground\Crm\Resource\Http\Resources</package>
-      <className>Playground\Crm\Resource\Http\Resources\People</className>
-      <methodName>with</methodName>
-      <methodSignature>with(Request $request): array</methodSignature>
-      <fullMethod>with(Request $request): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Crm\Resource\Http\Resources</package>
-      <className>Playground\Crm\Resource\Http\Resources\PeopleCollection</className>
-      <methodName>with</methodName>
-      <methodSignature>with(Request $request): array</methodSignature>
-      <fullMethod>with(Request $request): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
       <package>Playground\Crm\Resource</package>
       <className>Playground\Crm\Resource\ServiceProvider</className>
       <methodName>boot</methodName>
@@ -930,8 +765,8 @@
       <methodName>routes</methodName>
       <methodSignature>routes(array $config): void</methodSignature>
       <fullMethod>routes(array $config): void</fullMethod>
-      <crap>7</crap>
-      <complexity>7</complexity>
+      <crap>6</crap>
+      <complexity>6</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
@@ -941,8 +776,8 @@
       <methodName>about</methodName>
       <methodSignature>about(): void</methodSignature>
       <fullMethod>about(): void</fullMethod>
-      <crap>30</crap>
-      <complexity>30</complexity>
+      <crap>29</crap>
+      <complexity>29</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
