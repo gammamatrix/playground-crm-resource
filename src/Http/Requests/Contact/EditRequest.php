@@ -26,7 +26,6 @@ class EditRequest extends FormRequest
         'client_id' => ['nullable', 'uuid'],
         'location_id' => ['nullable', 'uuid'],
         'organization_id' => ['nullable', 'uuid'],
-        'people_id' => ['nullable', 'uuid'],
         'canceled_at' => ['nullable', 'string'],
         'closed_at' => ['nullable', 'string'],
         'embargo_at' => ['nullable', 'string'],

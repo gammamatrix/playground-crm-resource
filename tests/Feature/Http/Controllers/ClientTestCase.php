@@ -67,7 +67,6 @@ class ClientTestCase extends PlaygroundCase
         'contact_id',
         'location_id',
         'organization_id',
-        'people_id',
         'created_at',
         'updated_at',
         'deleted_at',

@@ -11,12 +11,10 @@ use Playground\Crm\Models\Client;
 use Playground\Crm\Models\Contact;
 use Playground\Crm\Models\Location;
 use Playground\Crm\Models\Organization;
-use Playground\Crm\Models\People;
 use Playground\Crm\Resource\Policies\ClientPolicy;
 use Playground\Crm\Resource\Policies\ContactPolicy;
 use Playground\Crm\Resource\Policies\LocationPolicy;
 use Playground\Crm\Resource\Policies\OrganizationPolicy;
-use Playground\Crm\Resource\Policies\PeoplePolicy;
 
 /**
  * Playground: CRM Resource Configuration and Environment Variables
@@ -48,7 +46,6 @@ use Playground\Crm\Resource\Policies\PeoplePolicy;
  *           contacts: bool,
  *           locations: bool,
  *           organizations: bool,
- *           peoples: bool,
  *       },
  *       blade: string,
  *       abilities: array<string, string[]>,
@@ -130,7 +127,6 @@ return [
         Contact::class => ContactPolicy::class,
         Location::class => LocationPolicy::class,
         Organization::class => OrganizationPolicy::class,
-        People::class => PeoplePolicy::class,
     ],
 
     /*
@@ -147,7 +143,6 @@ return [
         'contacts' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CONTACTS', true),
         'locations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_LOCATIONS', true),
         'organizations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_ORGANIZATIONS', true),
-        'peoples' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_PEOPLES', true),
     ],
 
     /*
@@ -192,7 +187,6 @@ return [
             'playground-crm-resource:contact:*',
             'playground-crm-resource:location:*',
             'playground-crm-resource:organization:*',
-            'playground-crm-resource:people:*',
         ],
         'user' => [
             'playground-crm-resource:client:view',
@@ -203,8 +197,6 @@ return [
             'playground-crm-resource:location:viewAny',
             'playground-crm-resource:organization:view',
             'playground-crm-resource:organization:viewAny',
-            'playground-crm-resource:people:view',
-            'playground-crm-resource:people:viewAny',
         ],
     ],
 ];

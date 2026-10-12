@@ -32,9 +32,6 @@ tags:
   -
     name: Organization
     description: 'Manage organizations in storage.'
-  -
-    name: People
-    description: 'Manage people in storage.'
 paths:
   '/resource/crm/clients/{id}':
     $ref: paths/clients/id.yml
@@ -92,20 +89,6 @@ paths:
     $ref: paths/organizations/create.yml
   '/resource/crm/organizations/edit/{id}':
     $ref: paths/organizations/edit.yml
-  '/resource/crm/people/{id}':
-    $ref: paths/people/id.yml
-  /resource/crm/people:
-    $ref: paths/people/index.yml
-  /resource/crm/people/index:
-    $ref: paths/people/index-form.yml
-  '/resource/crm/people/lock/{id}':
-    $ref: paths/people/lock.yml
-  '/resource/crm/people/restore/{id}':
-    $ref: paths/people/restore.yml
-  /resource/crm/people/create:
-    $ref: paths/people/create.yml
-  '/resource/crm/people/edit/{id}':
-    $ref: paths/people/edit.yml
 components:
   schemas:
     Client:
@@ -116,5 +99,3 @@ components:
       $ref: models/location.yml
     Organization:
       $ref: models/organization.yml
-    People:
-      $ref: models/people.yml

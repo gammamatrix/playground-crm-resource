@@ -35,11 +35,6 @@ properties:
     type: string
     format: uuid
     nullable: true
-  people_id:
-    description: 'Foreign key: links a people to this contact.'
-    type: string
-    format: uuid
-    nullable: true
   canceled_at:
     description: 'The canceled at date for this contact.'
     type: string

@@ -50,11 +50,6 @@ properties:
     type: string
     format: uuid
     nullable: true
-  people_id:
-    description: 'Foreign key: links a people to this client.'
-    type: string
-    format: uuid
-    nullable: true
   created_at:
     description: 'Denotes the date and time, the client was created.'
     type: string

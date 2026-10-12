@@ -53,10 +53,6 @@ $columnsViewable = [
         'hide-sm' => true,
         'label' => 'Organization id',
     ],
-    'people_id' => [
-        'hide-sm' => true,
-        'label' => 'People id',
-    ],
     'locale' => [
         'hide-sm' => true,
         'linkType' => null,

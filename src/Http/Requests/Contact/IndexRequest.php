@@ -80,7 +80,6 @@ class IndexRequest extends BaseIndexRequest
         'client_id' => ['column' => 'client_id', 'label' => 'Client id', 'type' => 'uuid', 'nullable' => true],
         'location_id' => ['column' => 'location_id', 'label' => 'Location id', 'type' => 'uuid', 'nullable' => true],
         'organization_id' => ['column' => 'organization_id', 'label' => 'Organization id', 'type' => 'uuid', 'nullable' => true],
-        'people_id' => ['column' => 'people_id', 'label' => 'People id', 'type' => 'uuid', 'nullable' => true],
     ];
 
     /**
@@ -115,7 +114,6 @@ class IndexRequest extends BaseIndexRequest
         'client_id' => ['column' => 'client_id', 'label' => 'Client id', 'type' => 'string'],
         'location_id' => ['column' => 'location_id', 'label' => 'Location id', 'type' => 'string'],
         'organization_id' => ['column' => 'organization_id', 'label' => 'Organization id', 'type' => 'string'],
-        'people_id' => ['column' => 'people_id', 'label' => 'People id', 'type' => 'string'],
         'created_at' => ['column' => 'created_at', 'label' => 'Created At', 'type' => 'string'],
         'updated_at' => ['column' => 'updated_at', 'label' => 'Updated At', 'type' => 'string'],
         'deleted_at' => ['column' => 'deleted_at', 'label' => 'Deleted At', 'type' => 'string'],
