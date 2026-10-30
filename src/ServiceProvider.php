@@ -55,6 +55,8 @@ class ServiceProvider extends AuthServiceProvider
          *             contacts: bool,
          *             locations: bool,
          *             organizations: bool,
+         *             tags: bool,
+         *             tagged: bool,
          *        },
          *        blade: string,
          *        abilities: array<string, string[]>,
@@ -180,6 +182,12 @@ class ServiceProvider extends AuthServiceProvider
         if (! empty($config['organizations'])) {
             $this->loadRoutesFrom(dirname(__DIR__).'/routes/organizations.php');
         }
+        if (! empty($config['tags'])) {
+            $this->loadRoutesFrom(dirname(__DIR__).'/routes/tags.php');
+        }
+        if (! empty($config['tagged'])) {
+            $this->loadRoutesFrom(dirname(__DIR__).'/routes/tagged.php');
+        }
     }
 
     public function about(): void
@@ -218,6 +226,8 @@ class ServiceProvider extends AuthServiceProvider
             '<fg=red;options=bold>Route</> contacts' => ! empty($routes['contacts']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             '<fg=red;options=bold>Route</> locations' => ! empty($routes['locations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             '<fg=red;options=bold>Route</> organizations' => ! empty($routes['organizations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
+            '<fg=red;options=bold>Route</> tags' => ! empty($routes['tags']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
+            '<fg=red;options=bold>Route</> tagged' => ! empty($routes['tagged']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
 
             'Package' => $this->package,
             'Version' => ServiceProvider::VERSION,

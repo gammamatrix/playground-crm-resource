@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Playground\Crm\Models\Location;
 
 /**
@@ -15,6 +16,9 @@ use Playground\Crm\Models\Location;
  */
 class LocationTestCase extends PlaygroundCase
 {
+    /**
+     * @var class-string<Model>
+     */
     public string $fqdn = Location::class;
 
     /**

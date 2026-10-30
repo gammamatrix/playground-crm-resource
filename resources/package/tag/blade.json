@@ -1,0 +1,25 @@
+{
+    "class": "tag/index.blade",
+    "config": "playground-crm-resource",
+    "fqdn": "tag/index.blade",
+    "module": "CRM",
+    "module_slug": "crm",
+    "name": "Tag",
+    "namespace": "Playground/Crm/Resource",
+    "organization": "Playground",
+    "package": "playground-crm-resource",
+    "extends": "playground::layouts.resource",
+    "folder": "tag",
+    "model": "Tag",
+    "model_column": "tag",
+    "model_label": "Tag",
+    "model_slug": "tag",
+    "model_variable": "tag",
+    "model_variable_plural": "tags",
+    "type": "playground-resource",
+    "route": "playground.crm.resource",
+    "title": "Tag",
+    "models": {
+        "Tag": "resources/configurations/playground-crm/tag/model.json"
+    }
+}

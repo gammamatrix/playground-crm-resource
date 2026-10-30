@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Playground\Crm\Models\Organization;
 
 /**
@@ -15,6 +16,9 @@ use Playground\Crm\Models\Organization;
  */
 class OrganizationTestCase extends PlaygroundCase
 {
+    /**
+     * @var class-string<Model>
+     */
     public string $fqdn = Organization::class;
 
     /**

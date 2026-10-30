@@ -11,10 +11,14 @@ use Playground\Crm\Models\Client;
 use Playground\Crm\Models\Contact;
 use Playground\Crm\Models\Location;
 use Playground\Crm\Models\Organization;
+use Playground\Crm\Models\Tag;
+use Playground\Crm\Models\Tagged;
 use Playground\Crm\Resource\Policies\ClientPolicy;
 use Playground\Crm\Resource\Policies\ContactPolicy;
 use Playground\Crm\Resource\Policies\LocationPolicy;
 use Playground\Crm\Resource\Policies\OrganizationPolicy;
+use Playground\Crm\Resource\Policies\TaggedPolicy;
+use Playground\Crm\Resource\Policies\TagPolicy;
 
 /**
  * Playground: CRM Resource Configuration and Environment Variables
@@ -46,6 +50,8 @@ use Playground\Crm\Resource\Policies\OrganizationPolicy;
  *           contacts: bool,
  *           locations: bool,
  *           organizations: bool,
+ *           tags: bool,
+ *           tagged: bool,
  *       },
  *       blade: string,
  *       abilities: array<string, string[]>,
@@ -127,6 +133,8 @@ return [
         Contact::class => ContactPolicy::class,
         Location::class => LocationPolicy::class,
         Organization::class => OrganizationPolicy::class,
+        Tag::class => TagPolicy::class,
+        Tagged::class => TaggedPolicy::class,
     ],
 
     /*
@@ -143,6 +151,8 @@ return [
         'contacts' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_CONTACTS', true),
         'locations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_LOCATIONS', true),
         'organizations' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_ORGANIZATIONS', true),
+        'tags' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_TAGS', true),
+        'tagged' => (bool) env('PLAYGROUND_CRM_RESOURCE_ROUTES_TAGGED', true),
     ],
 
     /*
@@ -187,6 +197,8 @@ return [
             'playground-crm-resource:contact:*',
             'playground-crm-resource:location:*',
             'playground-crm-resource:organization:*',
+            'playground-crm-resource:tag:*',
+            'playground-crm-resource:tagged:*',
         ],
         'user' => [
             'playground-crm-resource:client:view',
@@ -197,6 +209,10 @@ return [
             'playground-crm-resource:location:viewAny',
             'playground-crm-resource:organization:view',
             'playground-crm-resource:organization:viewAny',
+            'playground-crm-resource:tag:view',
+            'playground-crm-resource:tag:viewAny',
+            'playground-crm-resource:tagged:view',
+            'playground-crm-resource:tagged:viewAny',
         ],
     ],
 ];

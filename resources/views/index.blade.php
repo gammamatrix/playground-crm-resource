@@ -99,6 +99,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-6">
+                                <div class="card m-1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tags</h5>
+                                        <h6
+                                            class="card-subtitle mb-2 text-muted"
+                                        >
+                                            Manage tags
+                                        </h6>
+                                        <p class="card-text"></p>
+                                        <a
+                                            class="card-link"
+                                            href="{{ route('playground.crm.resource.tags') }}"
+                                            >View Tags</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

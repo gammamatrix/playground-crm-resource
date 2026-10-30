@@ -8,7 +8,7 @@
     "module_labels": "CRMs",
     "module_slug": "crm",
     "module_slugs": "crms",
-    "name": "Crm",
+    "name": "CRM Resource",
     "namespace": "Playground/Crm/Resource",
     "organization": "Playground",
     "organization_email": "jeremy.postlethwaite@gmail.com",

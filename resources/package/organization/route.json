@@ -7,7 +7,7 @@
     "module_labels": "CRMs",
     "module_slug": "crm",
     "module_slugs": "crms",
-    "name": "Organization",
+    "name": "organization",
     "namespace": "Playground/Crm/Resource",
     "organization": "Playground",
     "package": "playground-crm-resource",

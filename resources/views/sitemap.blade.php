@@ -29,8 +29,15 @@ $viewOrganizations = \Playground\Auth\Facades\Can::access($user, [
     'roles' => ['admin', 'manager', 'publisher'],
 ])->allowed();
 
+$viewTags = \Playground\Auth\Facades\Can::access($user, [
+    'allow' => false,
+    'any' => true,
+    'privilege' => 'playground-crm-resource:tag:viewAny',
+    'roles' => ['admin', 'manager', 'publisher'],
+])->allowed();
 
-if (!$viewClients && !$viewContacts && !$viewLocations && !$viewOrganizations) {
+
+if (!$viewClients && !$viewContacts && !$viewLocations && !$viewOrganizations && !$viewTags) {
     return;
 }
 ?>
@@ -44,8 +51,8 @@ if (!$viewClients && !$viewContacts && !$viewLocations && !$viewOrganizations) {
                     <div class="card-header">
                         Client Relationship Management System
                         <small class="text-muted"
-                            >clients, contacts, locations and
-                            organizations</small
+                            >clients, contacts, locations, organizations and
+                            tags</small
                         >
                     </div>
                     <ul class="list-group list-group-flush">
@@ -82,6 +89,15 @@ if (!$viewClients && !$viewContacts && !$viewLocations && !$viewOrganizations) {
                                 class="list-group-item list-group-item-action"
                             >
                                 Organizations
+                            </a>
+                        @endif
+
+                        @if ($viewTags)
+                            <a
+                                href="{{ route('playground.crm.resource.tags') }}"
+                                class="list-group-item list-group-item-action"
+                            >
+                                Tags
                             </a>
                         @endif
                     </ul>

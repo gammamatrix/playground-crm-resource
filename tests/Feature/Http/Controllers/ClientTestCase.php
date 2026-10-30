@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Crm\Resource\Http\Controllers;
 
+use Illuminate\Database\Eloquent\Model;
 use Playground\Crm\Models\Client;
 
 /**
@@ -15,6 +16,9 @@ use Playground\Crm\Models\Client;
  */
 class ClientTestCase extends PlaygroundCase
 {
+    /**
+     * @var class-string<Model>
+     */
     public string $fqdn = Client::class;
 
     /**
