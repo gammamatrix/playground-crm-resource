@@ -55,6 +55,7 @@
     "privilege": "playground-crm-resource:contact",
     "route": "playground.crm.resource",
     "view": "playground-crm-resource::contact",
+    "actions": [],
     "implements": [],
     "uses": [],
     "packageInfo": {

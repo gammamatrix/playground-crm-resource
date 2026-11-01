@@ -55,6 +55,7 @@
     "privilege": "playground-crm-resource:tag",
     "route": "playground.crm.resource",
     "view": "playground-crm-resource::tag",
+    "actions": [],
     "implements": [],
     "uses": [],
     "packageInfo": {

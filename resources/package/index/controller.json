@@ -53,6 +53,7 @@
     "privilege": "playground-crm-resource",
     "route": "playground.crm.resource",
     "view": "playground-crm-resource",
+    "actions": [],
     "implements": [],
     "uses": [],
     "packageInfo": {
